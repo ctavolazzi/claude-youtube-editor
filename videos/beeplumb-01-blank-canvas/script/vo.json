@@ -1,0 +1,58 @@
+{
+  "project": "beeplumb-01-blank-canvas",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "gap": 0.32,
+  "beat_gap": 0.75,
+  "note": "One entry per spoken line. `beat` groups lines into scenes. Put a word in {bleep:...} to replace it with a censor bleep (it is synthesized separately, so the word is never spoken). tools/tts_kokoro.py turns this into the voiceover + word timings.",
+  "lines": [
+    { "id": "open-1", "beat": "open", "text": "All weekend, I went around and around, trying to figure out what this channel was going to be." },
+    { "id": "open-2", "beat": "open", "text": "Do I use this handle? Do I chase this trend? Do I try to beat that guy?" },
+    { "id": "open-3", "beat": "open", "text": "None of that is going to work. And here's why." },
+    { "id": "open-4", "beat": "open", "text": "Yes, I know. And here's why is a YouTube phrase. I'm doing it anyway." },
+    { "id": "open-5", "beat": "open", "text": "None of it works, because I don't know what I want to do yet. I haven't done it." },
+
+    { "id": "know-1", "beat": "know", "text": "Here's what I do know." },
+    { "id": "know-2", "beat": "know", "text": "I want to explore. I want to express myself. And I want to show you what I'm learning, so if you're into this stuff, you can learn from my example." },
+    { "id": "know-3", "beat": "know", "text": "You. Not an audience. Not you guys. You." },
+    { "id": "know-4", "beat": "know", "text": "Because let's be honest about how you got here. An algorithm put a thumbnail in front of you. You gave it a few seconds. And right now, you're deciding if I'm worth it, over literally everything else on the internet." },
+    { "id": "know-5", "beat": "know", "text": "That's not me being important. That's me being lucky. Hi." },
+
+    { "id": "name-1", "beat": "name", "text": "So after circling the drain on this for days, if not weeks, I picked a name. Beeplumb." },
+    { "id": "name-2", "beat": "name", "text": "A bee is a gathering where somebody comes out on top. To plumb is to measure a thing against true." },
+    { "id": "name-3", "beat": "name", "text": "Also, it's a plum. That is also a bee. Say hi to the mascot." },
+    { "id": "name-4", "beat": "name", "text": "Why not a persona? Why not bring over my Instagram, where I had seventy seven thousand followers under a different name?" },
+    { "id": "name-5", "beat": "name", "text": "Because I want a fresh start." },
+    { "id": "name-6", "beat": "name", "text": "Give a painter a blank canvas, and that's a wonderful experience. Give them a canvas that's already covered in paint, and sure, they can still have a great time. But the blank one is better." },
+    { "id": "name-7", "beat": "name", "text": "And there's nothing wrong with the people who followed me over there. Other than the fact that they decided following me was a good idea." },
+
+    { "id": "plan-1", "beat": "plan", "text": "So here's the plan. I'm building a game. A silly little game." },
+    { "id": "plan-2", "beat": "plan", "text": "I'm going to document the whole thing. What I learned, what went well, and what absolutely did not." },
+    { "id": "plan-3", "beat": "plan", "text": "Some current events, too. We all breathe the same air and drink the same water. This stuff affects all of us." },
+    { "id": "plan-4", "beat": "plan", "text": "I'll open a silly little store. And I'll make videos about whatever I'm curious about that day." },
+
+    { "id": "ai-1", "beat": "ai", "text": "And yes. I'm going to use AI. A lot of it." },
+    { "id": "ai-2", "beat": "ai", "text": "I know those two letters are enough to rile some people up. But it's here, and it's not going anywhere." },
+    { "id": "ai-3", "beat": "ai", "text": "Also, I'm not rich. I'm a broke {bleep:bitch}. Paycheck to paycheck, and even then it's not enough. I don't have a credit card." },
+    { "id": "ai-4", "beat": "ai", "text": "I can't drop a thousand dollars on an artist for half of one video that might never get seen. That's not a business deal. That's a bonfire." },
+    { "id": "ai-5", "beat": "ai", "text": "A hundred bucks a month for Claude, so my videos can actually look like videos? That, I can do." },
+    { "id": "ai-6", "beat": "ai", "text": "I work all the time. I have a spinal condition. I am exactly the person these tools are for." },
+    { "id": "ai-7", "beat": "ai", "text": "So I'll show you how I use them. If you don't like that, that's fine. You're allowed. Genuinely." },
+    { "id": "ai-8", "beat": "ai", "text": "Case in point. This voice? AI. These graphics? Code. The plum? Also code. Look at it go." },
+
+    { "id": "why-1", "beat": "why", "text": "The actual goal is simple. Make enough money to buy land." },
+    { "id": "why-2", "beat": "why", "text": "Use that land to try some of my bigger ideas. Then bring them back to my main channel, and finally close out some storylines I've left open for years." },
+    { "id": "why-3", "beat": "why", "text": "Could I take out a loan? Sure. Blah, blah, blah. I don't want to." },
+    { "id": "why-4", "beat": "why", "text": "I want to make a silly little game. Then another one. And track what AI can and can't do for game dev and video editing, as it gets better." },
+
+    { "id": "silly-1", "beat": "silly", "text": "A while back, I saw a video that said, it's just storytelling. That's all this is." },
+    { "id": "silly-2", "beat": "silly", "text": "And somewhere along the way, my stuff stopped being stories, and started having an agenda." },
+    { "id": "silly-3", "beat": "silly", "text": "I needed people to be open minded about AI. People were not. They brigaded. They piled on. It stopped being fun." },
+    { "id": "silly-4", "beat": "silly", "text": "I've been serious for years. Serious stuff, with serious people. And it {bleep:fucking} sucks." },
+    { "id": "silly-5", "beat": "silly", "text": "I don't like being serious. I like being silly." },
+    { "id": "silly-6", "beat": "silly", "pause_before": 1.2, "text": "So this channel is me, being silly again." },
+
+    { "id": "out-1", "beat": "out", "text": "This is Beeplumb. This is the first brush stroke." },
+    { "id": "out-2", "beat": "out", "text": "Next up, the game. Let's see what we paint." }
+  ]
+}

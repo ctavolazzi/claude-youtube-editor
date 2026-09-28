@@ -1,0 +1,16 @@
+I spent a whole weekend trying to figure out what this channel should be, and landed on a blank canvas: a new name, zero followers, a silly little game to build, and AI doing the heavy lifting, because I'm broke and $100 a month is the whole budget.
+Everything in this video (the voice, the motion graphics, the plum-bee mascot) was made with free, open-source tools and Claude Code. No editor, no artist, no stock footage.
+
+🐝 Follow along: https://beeplumbgh.net
+▶ Subscribe for the game devlog: https://www.youtube.com/@beeplumbgh
+
+0:00 All weekend, going around in circles
+0:24 What I actually know
+0:56 The name (and the mascot)
+1:43 The plan: a silly little game
+2:06 The AI part (and why I'm using it)
+3:01 The actual goal
+3:30 Getting back to being silly
+4:02 The first brush stroke
+
+If you want to see whether a broke person with a spinal condition and a $100 AI subscription can build a game and a channel from zero, hit subscribe. Next up: the game.

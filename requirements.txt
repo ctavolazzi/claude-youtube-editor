@@ -20,3 +20,6 @@ google-auth-httplib2
 # Optional — only for tools/capture_web.py (auto-capturing public web pages to clone as beats):
 #   pip install playwright && playwright install chromium
 # playwright
+kokoro-onnx          # local TTS for tools/gen_vo_local.py (model via tools/fetch_kokoro.py)
+soundfile
+pyloudnorm
