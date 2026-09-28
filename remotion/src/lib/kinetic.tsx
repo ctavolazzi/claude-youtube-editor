@@ -18,6 +18,7 @@ const C = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as cons
 const OUT = Easing.bezier(0.16, 1, 0.3, 1);
 const IN = Easing.bezier(0.7, 0, 0.84, 0);
 const SNAP = Easing.bezier(0.2, 1.6, 0.4, 1); // overshoot, for slams
+const EASE_IO = Easing.bezier(0.65, 0, 0.35, 1);
 
 export const BEAT = 30;
 export const BAR = 120;
@@ -156,9 +157,11 @@ export const Camera: React.FC<{
   children: React.ReactNode;
 }> = ({ punches = [], shakes = [], shakeAmt = 14, drift = 1, children }) => {
   const frame = useCurrentFrame();
+  // each punch snaps in over 4 frames and fully releases over `len`: no residue, so hits never
+  // accumulate into a creeping zoom
   const punch = punches.reduce((s, p) => {
-    const len = p.len ?? 22;
-    return s + (p.amt ?? 0.08) * lerp(frame, p.at, p.at + 4, 0, 1, OUT) * lerp(frame, p.at + 4, p.at + len, 1, 0.35, OUT);
+    const len = p.len ?? 30;
+    return s + (p.amt ?? 0.08) * lerp(frame, p.at, p.at + 4, 0, 1, OUT) * lerp(frame, p.at + 4, p.at + len, 1, 0, EASE_IO);
   }, 0);
   const sh = pulse(frame, shakes, 16) * shakeAmt;
   const sx = (random(`cx${frame}`) - 0.5) * 2 * sh;

@@ -1,0 +1,1003 @@
+{
+ "words": [
+  {
+   "text": "Your",
+   "start": 350,
+   "end": 550,
+   "confidence": 1.0
+  },
+  {
+   "text": "life",
+   "start": 550,
+   "end": 1000,
+   "confidence": 1.0
+  },
+  {
+   "text": "has",
+   "start": 1000,
+   "end": 1230,
+   "confidence": 1.0
+  },
+  {
+   "text": "never",
+   "start": 1230,
+   "end": 1540,
+   "confidence": 1.0
+  },
+  {
+   "text": "been",
+   "start": 1540,
+   "end": 1700,
+   "confidence": 1.0
+  },
+  {
+   "text": "this",
+   "start": 1700,
+   "end": 1860,
+   "confidence": 1.0
+  },
+  {
+   "text": "comfortable.",
+   "start": 1860,
+   "end": 2420,
+   "confidence": 1.0
+  },
+  {
+   "text": "Food",
+   "start": 2759,
+   "end": 3049,
+   "confidence": 1.0
+  },
+  {
+   "text": "arrives",
+   "start": 3049,
+   "end": 3479,
+   "confidence": 1.0
+  },
+  {
+   "text": "in",
+   "start": 3479,
+   "end": 3579,
+   "confidence": 1.0
+  },
+  {
+   "text": "twenty",
+   "start": 3579,
+   "end": 3849,
+   "confidence": 1.0
+  },
+  {
+   "text": "minutes.",
+   "start": 3849,
+   "end": 4269,
+   "confidence": 1.0
+  },
+  {
+   "text": "Every",
+   "start": 4635,
+   "end": 4865,
+   "confidence": 1.0
+  },
+  {
+   "text": "show",
+   "start": 4865,
+   "end": 5175,
+   "confidence": 1.0
+  },
+  {
+   "text": "ever",
+   "start": 5175,
+   "end": 5405,
+   "confidence": 1.0
+  },
+  {
+   "text": "made",
+   "start": 5405,
+   "end": 5745,
+   "confidence": 1.0
+  },
+  {
+   "text": "is",
+   "start": 5875,
+   "end": 6035,
+   "confidence": 1.0
+  },
+  {
+   "text": "one",
+   "start": 6035,
+   "end": 6305,
+   "confidence": 1.0
+  },
+  {
+   "text": "tap",
+   "start": 6305,
+   "end": 6545,
+   "confidence": 1.0
+  },
+  {
+   "text": "away.",
+   "start": 6545,
+   "end": 6905,
+   "confidence": 1.0
+  },
+  {
+   "text": "The",
+   "start": 7164,
+   "end": 7294,
+   "confidence": 1.0
+  },
+  {
+   "text": "temperature",
+   "start": 7294,
+   "end": 7924,
+   "confidence": 1.0
+  },
+  {
+   "text": "is",
+   "start": 7924,
+   "end": 8154,
+   "confidence": 1.0
+  },
+  {
+   "text": "always",
+   "start": 8154,
+   "end": 8524,
+   "confidence": 1.0
+  },
+  {
+   "text": "perfect.",
+   "start": 8524,
+   "end": 9114,
+   "confidence": 1.0
+  },
+  {
+   "text": "So",
+   "start": 9451,
+   "end": 9611,
+   "confidence": 1.0
+  },
+  {
+   "text": "why",
+   "start": 9611,
+   "end": 9831,
+   "confidence": 1.0
+  },
+  {
+   "text": "does",
+   "start": 9831,
+   "end": 10091,
+   "confidence": 1.0
+  },
+  {
+   "text": "everyone",
+   "start": 10161,
+   "end": 10551,
+   "confidence": 1.0
+  },
+  {
+   "text": "feel",
+   "start": 10551,
+   "end": 10751,
+   "confidence": 1.0
+  },
+  {
+   "text": "so",
+   "start": 10751,
+   "end": 10941,
+   "confidence": 1.0
+  },
+  {
+   "text": "tired?",
+   "start": 10941,
+   "end": 11471,
+   "confidence": 1.0
+  },
+  {
+   "text": "Here's",
+   "start": 12279,
+   "end": 12609,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 12609,
+   "end": 12689,
+   "confidence": 1.0
+  },
+  {
+   "text": "trap.",
+   "start": 12689,
+   "end": 13119,
+   "confidence": 1.0
+  },
+  {
+   "text": "Comfort",
+   "start": 13400,
+   "end": 13900,
+   "confidence": 1.0
+  },
+  {
+   "text": "isn't",
+   "start": 13900,
+   "end": 14150,
+   "confidence": 1.0
+  },
+  {
+   "text": "free.",
+   "start": 14150,
+   "end": 14610,
+   "confidence": 1.0
+  },
+  {
+   "text": "Every",
+   "start": 14944,
+   "end": 15214,
+   "confidence": 1.0
+  },
+  {
+   "text": "bit",
+   "start": 15214,
+   "end": 15354,
+   "confidence": 1.0
+  },
+  {
+   "text": "of",
+   "start": 15354,
+   "end": 15424,
+   "confidence": 1.0
+  },
+  {
+   "text": "friction",
+   "start": 15424,
+   "end": 15934,
+   "confidence": 1.0
+  },
+  {
+   "text": "you",
+   "start": 15934,
+   "end": 16064,
+   "confidence": 1.0
+  },
+  {
+   "text": "remove",
+   "start": 16064,
+   "end": 16434,
+   "confidence": 1.0
+  },
+  {
+   "text": "from",
+   "start": 16434,
+   "end": 16614,
+   "confidence": 1.0
+  },
+  {
+   "text": "your",
+   "start": 16614,
+   "end": 16714,
+   "confidence": 1.0
+  },
+  {
+   "text": "day",
+   "start": 16714,
+   "end": 17044,
+   "confidence": 1.0
+  },
+  {
+   "text": "was",
+   "start": 17404,
+   "end": 17584,
+   "confidence": 1.0
+  },
+  {
+   "text": "also",
+   "start": 17584,
+   "end": 17964,
+   "confidence": 1.0
+  },
+  {
+   "text": "a",
+   "start": 17964,
+   "end": 18014,
+   "confidence": 1.0
+  },
+  {
+   "text": "small",
+   "start": 18014,
+   "end": 18414,
+   "confidence": 1.0
+  },
+  {
+   "text": "workout",
+   "start": 18414,
+   "end": 18924,
+   "confidence": 1.0
+  },
+  {
+   "text": "for",
+   "start": 18924,
+   "end": 19064,
+   "confidence": 1.0
+  },
+  {
+   "text": "your",
+   "start": 19064,
+   "end": 19244,
+   "confidence": 1.0
+  },
+  {
+   "text": "will.",
+   "start": 19244,
+   "end": 19604,
+   "confidence": 1.0
+  },
+  {
+   "text": "Walk",
+   "start": 19935,
+   "end": 20195,
+   "confidence": 1.0
+  },
+  {
+   "text": "less,",
+   "start": 20195,
+   "end": 20645,
+   "confidence": 1.0
+  },
+  {
+   "text": "and",
+   "start": 20645,
+   "end": 20825,
+   "confidence": 1.0
+  },
+  {
+   "text": "your",
+   "start": 20825,
+   "end": 20915,
+   "confidence": 1.0
+  },
+  {
+   "text": "legs",
+   "start": 20915,
+   "end": 21245,
+   "confidence": 1.0
+  },
+  {
+   "text": "get",
+   "start": 21245,
+   "end": 21415,
+   "confidence": 1.0
+  },
+  {
+   "text": "weaker.",
+   "start": 21415,
+   "end": 21855,
+   "confidence": 1.0
+  },
+  {
+   "text": "Choose",
+   "start": 22189,
+   "end": 22489,
+   "confidence": 1.0
+  },
+  {
+   "text": "less,",
+   "start": 22489,
+   "end": 22919,
+   "confidence": 1.0
+  },
+  {
+   "text": "and",
+   "start": 22919,
+   "end": 23119,
+   "confidence": 1.0
+  },
+  {
+   "text": "your",
+   "start": 23119,
+   "end": 23219,
+   "confidence": 1.0
+  },
+  {
+   "text": "judgment",
+   "start": 23219,
+   "end": 23669,
+   "confidence": 1.0
+  },
+  {
+   "text": "does",
+   "start": 23669,
+   "end": 23879,
+   "confidence": 1.0
+  },
+  {
+   "text": "too.",
+   "start": 23879,
+   "end": 24189,
+   "confidence": 1.0
+  },
+  {
+   "text": "Two",
+   "start": 24953,
+   "end": 25223,
+   "confidence": 1.0
+  },
+  {
+   "text": "thousand",
+   "start": 25223,
+   "end": 25643,
+   "confidence": 1.0
+  },
+  {
+   "text": "years",
+   "start": 25643,
+   "end": 25853,
+   "confidence": 1.0
+  },
+  {
+   "text": "ago,",
+   "start": 25853,
+   "end": 26233,
+   "confidence": 1.0
+  },
+  {
+   "text": "Seneca",
+   "start": 26533,
+   "end": 27003,
+   "confidence": 1.0
+  },
+  {
+   "text": "wrote",
+   "start": 27003,
+   "end": 27283,
+   "confidence": 1.0
+  },
+  {
+   "text": "that",
+   "start": 27283,
+   "end": 27413,
+   "confidence": 1.0
+  },
+  {
+   "text": "we",
+   "start": 27413,
+   "end": 27503,
+   "confidence": 1.0
+  },
+  {
+   "text": "suffer",
+   "start": 27503,
+   "end": 27863,
+   "confidence": 1.0
+  },
+  {
+   "text": "more",
+   "start": 27863,
+   "end": 28173,
+   "confidence": 1.0
+  },
+  {
+   "text": "often",
+   "start": 28173,
+   "end": 28563,
+   "confidence": 1.0
+  },
+  {
+   "text": "in",
+   "start": 28563,
+   "end": 28663,
+   "confidence": 1.0
+  },
+  {
+   "text": "imagination",
+   "start": 28663,
+   "end": 29573,
+   "confidence": 1.0
+  },
+  {
+   "text": "than",
+   "start": 29883,
+   "end": 30023,
+   "confidence": 1.0
+  },
+  {
+   "text": "in",
+   "start": 30023,
+   "end": 30143,
+   "confidence": 1.0
+  },
+  {
+   "text": "reality.",
+   "start": 30143,
+   "end": 30713,
+   "confidence": 1.0
+  },
+  {
+   "text": "We",
+   "start": 31020,
+   "end": 31187,
+   "confidence": 1.0
+  },
+  {
+   "text": "used",
+   "start": 31187,
+   "end": 31464,
+   "confidence": 1.0
+  },
+  {
+   "text": "to",
+   "start": 31464,
+   "end": 31631,
+   "confidence": 1.0
+  },
+  {
+   "text": "meet",
+   "start": 31631,
+   "end": 31909,
+   "confidence": 1.0
+  },
+  {
+   "text": "small",
+   "start": 31909,
+   "end": 32242,
+   "confidence": 1.0
+  },
+  {
+   "text": "discomforts",
+   "start": 32242,
+   "end": 32909,
+   "confidence": 1.0
+  },
+  {
+   "text": "every",
+   "start": 32909,
+   "end": 33242,
+   "confidence": 1.0
+  },
+  {
+   "text": "day,",
+   "start": 33242,
+   "end": 33520,
+   "confidence": 1.0
+  },
+  {
+   "text": "and",
+   "start": 33520,
+   "end": 33742,
+   "confidence": 1.0
+  },
+  {
+   "text": "they",
+   "start": 33742,
+   "end": 34019,
+   "confidence": 1.0
+  },
+  {
+   "text": "kept",
+   "start": 34019,
+   "end": 34297,
+   "confidence": 1.0
+  },
+  {
+   "text": "our",
+   "start": 34297,
+   "end": 34519,
+   "confidence": 1.0
+  },
+  {
+   "text": "fears",
+   "start": 34519,
+   "end": 34853,
+   "confidence": 1.0
+  },
+  {
+   "text": "honest.",
+   "start": 34853,
+   "end": 35297,
+   "confidence": 1.0
+  },
+  {
+   "text": "Now",
+   "start": 35587,
+   "end": 35867,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 35867,
+   "end": 35947,
+   "confidence": 1.0
+  },
+  {
+   "text": "smallest",
+   "start": 35947,
+   "end": 36557,
+   "confidence": 1.0
+  },
+  {
+   "text": "inconvenience",
+   "start": 36557,
+   "end": 37377,
+   "confidence": 1.0
+  },
+  {
+   "text": "feels",
+   "start": 37507,
+   "end": 37897,
+   "confidence": 1.0
+  },
+  {
+   "text": "like",
+   "start": 37897,
+   "end": 38117,
+   "confidence": 1.0
+  },
+  {
+   "text": "an",
+   "start": 38117,
+   "end": 38187,
+   "confidence": 1.0
+  },
+  {
+   "text": "emergency.",
+   "start": 38187,
+   "end": 38947,
+   "confidence": 1.0
+  },
+  {
+   "text": "So",
+   "start": 39748,
+   "end": 39938,
+   "confidence": 1.0
+  },
+  {
+   "text": "here's",
+   "start": 39938,
+   "end": 40258,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 40258,
+   "end": 40338,
+   "confidence": 1.0
+  },
+  {
+   "text": "move.",
+   "start": 40338,
+   "end": 40708,
+   "confidence": 1.0
+  },
+  {
+   "text": "Put",
+   "start": 41070,
+   "end": 41310,
+   "confidence": 1.0
+  },
+  {
+   "text": "friction",
+   "start": 41310,
+   "end": 41720,
+   "confidence": 1.0
+  },
+  {
+   "text": "back",
+   "start": 41720,
+   "end": 41970,
+   "confidence": 1.0
+  },
+  {
+   "text": "on",
+   "start": 41970,
+   "end": 42080,
+   "confidence": 1.0
+  },
+  {
+   "text": "purpose.",
+   "start": 42080,
+   "end": 42630,
+   "confidence": 1.0
+  },
+  {
+   "text": "Take",
+   "start": 42905,
+   "end": 43205,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 43205,
+   "end": 43285,
+   "confidence": 1.0
+  },
+  {
+   "text": "stairs.",
+   "start": 43285,
+   "end": 43855,
+   "confidence": 1.0
+  },
+  {
+   "text": "Cook",
+   "start": 44142,
+   "end": 44432,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 44432,
+   "end": 44522,
+   "confidence": 1.0
+  },
+  {
+   "text": "meal.",
+   "start": 44522,
+   "end": 44942,
+   "confidence": 1.0
+  },
+  {
+   "text": "Sit",
+   "start": 45289,
+   "end": 45529,
+   "confidence": 1.0
+  },
+  {
+   "text": "with",
+   "start": 45529,
+   "end": 45679,
+   "confidence": 1.0
+  },
+  {
+   "text": "boredom",
+   "start": 45679,
+   "end": 46149,
+   "confidence": 1.0
+  },
+  {
+   "text": "for",
+   "start": 46149,
+   "end": 46299,
+   "confidence": 1.0
+  },
+  {
+   "text": "ten",
+   "start": 46299,
+   "end": 46599,
+   "confidence": 1.0
+  },
+  {
+   "text": "minutes",
+   "start": 46599,
+   "end": 47009,
+   "confidence": 1.0
+  },
+  {
+   "text": "before",
+   "start": 47009,
+   "end": 47319,
+   "confidence": 1.0
+  },
+  {
+   "text": "you",
+   "start": 47319,
+   "end": 47479,
+   "confidence": 1.0
+  },
+  {
+   "text": "reach",
+   "start": 47479,
+   "end": 47769,
+   "confidence": 1.0
+  },
+  {
+   "text": "for",
+   "start": 47769,
+   "end": 47869,
+   "confidence": 1.0
+  },
+  {
+   "text": "your",
+   "start": 47869,
+   "end": 48009,
+   "confidence": 1.0
+  },
+  {
+   "text": "phone.",
+   "start": 48009,
+   "end": 48449,
+   "confidence": 1.0
+  },
+  {
+   "text": "Not",
+   "start": 48785,
+   "end": 49075,
+   "confidence": 1.0
+  },
+  {
+   "text": "because",
+   "start": 49075,
+   "end": 49395,
+   "confidence": 1.0
+  },
+  {
+   "text": "suffering",
+   "start": 49395,
+   "end": 49945,
+   "confidence": 1.0
+  },
+  {
+   "text": "is",
+   "start": 49945,
+   "end": 50085,
+   "confidence": 1.0
+  },
+  {
+   "text": "good,",
+   "start": 50085,
+   "end": 50475,
+   "confidence": 1.0
+  },
+  {
+   "text": "but",
+   "start": 50855,
+   "end": 50975,
+   "confidence": 1.0
+  },
+  {
+   "text": "because",
+   "start": 50975,
+   "end": 51265,
+   "confidence": 1.0
+  },
+  {
+   "text": "a",
+   "start": 51265,
+   "end": 51305,
+   "confidence": 1.0
+  },
+  {
+   "text": "little",
+   "start": 51305,
+   "end": 51575,
+   "confidence": 1.0
+  },
+  {
+   "text": "resistance",
+   "start": 51575,
+   "end": 52315,
+   "confidence": 1.0
+  },
+  {
+   "text": "keeps",
+   "start": 52315,
+   "end": 52715,
+   "confidence": 1.0
+  },
+  {
+   "text": "you",
+   "start": 52715,
+   "end": 52805,
+   "confidence": 1.0
+  },
+  {
+   "text": "strong",
+   "start": 52805,
+   "end": 53145,
+   "confidence": 1.0
+  },
+  {
+   "text": "enough",
+   "start": 53145,
+   "end": 53375,
+   "confidence": 1.0
+  },
+  {
+   "text": "to",
+   "start": 53375,
+   "end": 53475,
+   "confidence": 1.0
+  },
+  {
+   "text": "handle",
+   "start": 53475,
+   "end": 53915,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 53915,
+   "end": 54025,
+   "confidence": 1.0
+  },
+  {
+   "text": "real",
+   "start": 54025,
+   "end": 54305,
+   "confidence": 1.0
+  },
+  {
+   "text": "thing.",
+   "start": 54305,
+   "end": 54685,
+   "confidence": 1.0
+  },
+  {
+   "text": "Comfort",
+   "start": 55428,
+   "end": 55928,
+   "confidence": 1.0
+  },
+  {
+   "text": "is",
+   "start": 55928,
+   "end": 56068,
+   "confidence": 1.0
+  },
+  {
+   "text": "a",
+   "start": 56068,
+   "end": 56118,
+   "confidence": 1.0
+  },
+  {
+   "text": "tool.",
+   "start": 56118,
+   "end": 56598,
+   "confidence": 1.0
+  },
+  {
+   "text": "Don't",
+   "start": 56932,
+   "end": 57132,
+   "confidence": 1.0
+  },
+  {
+   "text": "let",
+   "start": 57132,
+   "end": 57292,
+   "confidence": 1.0
+  },
+  {
+   "text": "it",
+   "start": 57292,
+   "end": 57372,
+   "confidence": 1.0
+  },
+  {
+   "text": "become",
+   "start": 57372,
+   "end": 57732,
+   "confidence": 1.0
+  },
+  {
+   "text": "the",
+   "start": 57732,
+   "end": 57822,
+   "confidence": 1.0
+  },
+  {
+   "text": "room",
+   "start": 57822,
+   "end": 58132,
+   "confidence": 1.0
+  },
+  {
+   "text": "you",
+   "start": 58132,
+   "end": 58272,
+   "confidence": 1.0
+  },
+  {
+   "text": "live",
+   "start": 58272,
+   "end": 58482,
+   "confidence": 1.0
+  },
+  {
+   "text": "in.",
+   "start": 58482,
+   "end": 58692,
+   "confidence": 1.0
+  }
+ ],
+ "text": "Your life has never been this comfortable. Food arrives in twenty minutes. Every show ever made is one tap away. The temperature is always perfect. So why does everyone feel so tired? Here's the trap. Comfort isn't free. Every bit of friction you remove from your day was also a small workout for your will. Walk less, and your legs get weaker. Choose less, and your judgment does too. Two thousand years ago, Seneca wrote that we suffer more often in imagination than in reality. We used to meet small discomforts every day, and they kept our fears honest. Now the smallest inconvenience feels like an emergency. So here's the move. Put friction back on purpose. Take the stairs. Cook the meal. Sit with boredom for ten minutes before you reach for your phone. Not because suffering is good, but because a little resistance keeps you strong enough to handle the real thing. Comfort is a tool. Don't let it become the room you live in.",
+ "speech_model_used": "script+pocketsphinx-align",
+ "source": "local"
+}
