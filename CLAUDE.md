@@ -49,6 +49,13 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
 
 ## Conventions (hard rules)
 
+- **Every finished video ships with its thumbnails.** When you render a video for YouTube, don't
+  stop at the MP4. Run `/packaging` in the same pass: one fixed title, 3 thumbnail bets (A/B/C),
+  `description.txt` with chapters, and the rendered thumbnails in `videos/<project>/packaging/thumbs/`.
+  Show the creator all three. With no face kit or no `GEMINI_API_KEY`, render them as Remotion stills
+  with the mascot as the "face" (see `videos/beeplumb-01-blank-canvas/packaging/packaging.md`
+  and `remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx`).
+
 - **Run everything from the repo root.** Tools resolve *engine* paths (media/library, catalogs,
   remotion/out) against their own location, but *project* paths against the CWD — so pass the project
   as `videos/video-1` and run from the repo root. Example: `python tools/render_cuts.py videos/video-1
