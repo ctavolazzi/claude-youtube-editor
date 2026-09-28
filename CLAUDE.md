@@ -49,7 +49,9 @@ authoring new ones; that's the fastest way to learn `remotion/src/lib/`.
 
 `remotion/src/shots/beeplumb/` is the **commentary kit demo**: every beat type from
 `remotion/src/lib/commentary.tsx` (thesis, chapter, quote, source, clip, term, stat, versus, lower
-third, end card) over a placeholder gameplay bed, plus `EssayReel`, the whole kit as one 46s piece.
+third, end card) over a placeholder gameplay bed. **`KineticReel` is the reference for the channel's
+energy**: kinetic type, camera punches, whips and glitches cut to a 120 BPM track, built from
+`remotion/src/lib/kinetic.tsx`.
 
 `remotion/src/shots/brand/BrandProof.tsx` is not a video beat — it's a utility shot that renders the
 current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses it.

@@ -5,9 +5,11 @@ description: Produce a beeplumbgh commentary video end to end: a voiceover essay
 
 # Commentary essay
 
-Read first: `brand.md` (§6 has the beat grammar), `docs/COMMENTARY.md` (format + fair-use rules),
-and `remotion/src/lib/commentary.tsx` (the kit). The demo shots in `remotion/src/shots/beeplumb/`
-show every component; `EssayReel` shows the pacing.
+Read first: `brand.md` (§6 is the kinetic motion language and the beat grammar), `docs/COMMENTARY.md`
+(format + fair-use rules), `remotion/src/lib/kinetic.tsx` (slams, camera, transitions, annotations,
+SFX) and `remotion/src/lib/commentary.tsx` (bed + cards). **`KineticReel` in
+`remotion/src/shots/beeplumb/` is the reference for energy and pacing; match it, don't regress to
+calm fades.** The `Essay*` shots are the component catalog.
 
 ## 1. Script → beat sheet
 

@@ -12,7 +12,7 @@ import { loadFont as loadSerif } from '@remotion/google-fonts/Spectral';
 
 export const FONT_DISPLAY = loadDisplay('normal', { weights: ['400', '600', '700', '900'], subsets: ['latin'] }).fontFamily;
 // italic cut of the display face, for pull quotes (same family name, italic style)
-loadDisplay('italic', { weights: ['400', '600'], subsets: ['latin'] });
+loadDisplay('italic', { weights: ['400', '600', '900'], subsets: ['latin'] });
 export const FONT_BODY = loadBody('normal', { weights: ['400', '500', '600', '800'], subsets: ['latin'] }).fontFamily;
 export const FONT_MONO = loadMono('normal', { weights: ['400', '700'], subsets: ['latin'] }).fontFamily;
 // serif for the Claude Code wordmark clone in the example shots; not a brand font

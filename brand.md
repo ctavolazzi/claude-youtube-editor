@@ -17,8 +17,9 @@
 - **Voice:** direct, curious, specific. Earn every claim: a quote has an author, a number has a
   source, a clip is credited on screen. Name the trap, then give the move. **On-screen text never
   uses em dashes.**
-- **Energy:** measured and confident. Long holds on a single idea, then one sharp beat. Not
-  MrBeast-loud, not ASMR-quiet. The hook (first ~15s) may run hotter (see §6).
+- **Energy:** HOT. Kinetic type, a moving camera, cuts on the beat. The essay is thoughtful; the
+  edit is not sleepy. (A calm first pass was rejected as boring: see §6.) Quiet moments are allowed
+  as deliberate contrast, never as the default.
 
 ## 2. Logo / wordmark
 
@@ -81,24 +82,33 @@ the Claude Code wordmark clone in the example shots; it is not a brand font.
   line), never full-bleed. Framing is part of the fair-use posture (it reads as quotation) and part
   of the look.
 
-## 6. Motion language: measured, editorial
+## 6. Motion language: kinetic, cut to the music
 
-Remotion, 60fps:
+Remotion, 60fps. The reference is `KineticReel` (`remotion/src/shots/beeplumb/`), built from
+`remotion/src/lib/kinetic.tsx` on top of the cards in `lib/commentary.tsx`.
 
-- **The bed never stops.** One continuous gameplay take runs under the whole video (or a chapter).
-  Beats change ON TOP of it; the background does not cut when the graphics do. Slow push-in
-  (+5% to +8% over a beat), desaturated ~35%, pulled down ~55% under text.
-- **Entrances:** fade + rise 28px over ~18 frames, expo ease-out (`EASINGS.easeOut`): arrives fast,
-  settles long. Theses reveal **word by word** (4-frame stagger, or pinned to transcript word times).
-- **Emphasis:** the honey **marker sweep** behind the phrase that matters, after the sentence lands.
-  One marker per beat.
-- **Holds:** let a finished card sit. A thesis holds 1.5 to 3s after its last word; silence on screen
-  is fine when the voice is doing the work.
-- **Exits:** mostly hard cuts on the narration's sentence boundary. No exit animations on cutaways.
-- **Never:** spins, elastic bounces, whip-pans between every card, stock "glitch" transitions.
-- **Hook exception (first ~15s):** allowed to run hotter: a crash-zoom into the game, a fast stack of
-  2 to 3 source cards, the thesis stamped with `EASINGS.overshoot`. Still **one readable event at a
-  time**, synced to its word.
+- **Cut to the music.** Pick the track first and find its grid: at 120 BPM a beat is 30 frames and a
+  bar is 120 (`beat(n)` / `bar(n)`). Scene changes land on bars, slams land on beats. With a voice,
+  the voice wins: cut on its sentence boundaries, slam on its stressed words, and nudge to the
+  nearest beat when it is within ~4 frames.
+- **The bed never stops,** and it moves: forward motion, banking, a speed surge on every scene cut.
+  Real gameplay gets the same treatment (push-in, desaturate ~35%, darken ~30 to 55%).
+- **Type slams.** Words arrive big and blurred and snap to size with overshoot (`Slam`, `SlamLine`),
+  one word or phrase per beat. Two voices of type: **INTER TIGHT 800 CAPS** for the shout, *Fraunces
+  Black Italic* for the thought. The key word goes honey, oversized, with a hit.
+- **The camera is alive.** Constant slow 3D drift, a punch-in (+7%) and a short shake on every hero
+  hit (`Camera`). Flash frame on the 3 to 5 biggest hits.
+- **Transitions have direction:** whip with directional motion blur (default), whip-up for
+  lists/numbers, zoom-through into chapter cards, RGB glitch into titles and clips. Scenes overlap by
+  5 frames so the whips cross. No plain crossfades.
+- **Annotate like a person:** hand-drawn circles, underlines, arrows, crosses and checks that draw
+  themselves on (`Scribble`); rubber stamps (`Stamp`) for SOURCE / CITED / dates; tape and halftone
+  on source screenshots; typewriter mono for citations (`Typed`).
+- **Finish:** letterbox bars, grain, faint scanlines, vignette on every frame.
+- **Pacing:** a new visual idea every 2 to 4 seconds in the hook, every 4 to 8 in the body. If a card
+  holds longer than 8 seconds, something on it must still be moving or arriving.
+- **Never:** crossfades as the default, bouncy cartoon easing on body text, more than one glitch
+  transition in a row, glitch over a line that needs to be read.
 
 **The beat grammar** (all in `remotion/src/lib/commentary.tsx`):
 
@@ -146,7 +156,7 @@ Remotion, 60fps:
 - **Format = voiceover essay over constant gameplay.** ✓
 - **Palette = honey + plum on night**, matching beeplumbgh.net. ✓
 - **Type = Fraunces / Inter Tight / Courier Prime.** ✓
-- **Motion = measured editorial;** word-by-word theses, one marker per beat, hard cuts. ✓
+- **Motion = kinetic, cut to the music;** slams, whips, camera punches, hand-drawn marks. ✓
 - **Third-party media = framed, credited, logged** in `videos/<project>/work/sources.json`
   via `tools/grab_source.py`. See `docs/COMMENTARY.md` for the fair-use rules. ✓
 - **Open:** a music bed. Lo-fi / ambient under the voice is the likely call; decide at the final mix.
@@ -155,7 +165,8 @@ Remotion, 60fps:
 ## 10. Sound design: SFX
 
 The game audio is **muted** under the essay (or ducked to a bed at ~−28 dB if its ambience helps).
-SFX are the punctuation, and there is not much of it. **Felt, not heard.** Everything under the voice.
+A **music bed runs the whole video** and sets the cut grid (§6). SFX are the punctuation: present
+and punchy on the hits, still always under the voice.
 
 **Choose every cue by its FUNCTION** (3+1 foundational sounds do the heavy lifting):
 
@@ -169,9 +180,11 @@ SFX are the punctuation, and there is not much of it. **Felt, not heard.** Every
 Plus the brand extras: a low **tape-stop / VHS rewind** before a quoted clip (the "we're quoting
 someone" signal), and a soft **film-projector click** on source cards.
 
-- **Taste:** subtle. Nothing louder than the voice, ever. Silence is part of the essay.
-- **Layer for 2 to 3 hero moments** only (riser → impact on the thesis; whoosh → impact on the
-  biggest chapter). Everything else single and sparse.
+- **Taste:** punchy on hits, quiet everywhere else. Nothing louder than the voice. Every whip gets a
+  whoosh, every slam of a hero word gets an impact, every stamp gets a stamp hit, every glitch gets a
+  zap. Decorative motion gets nothing.
+- **Layer for the hero moments** (riser → glitch → impact into the title; whoosh → impact on the
+  biggest reveal). About one layered moment per chapter.
 - **Density:** one cue per beat, on the beat's signature moment. A card cascade gets one sound, not
   one per card.
 - **Never:** ambient texture under speech, glitch/static under narration, meme booms (this channel
@@ -184,6 +197,8 @@ someone" signal), and a soft **film-projector click** on source cards.
   appears, so it becomes the channel's sound.
 - **Source.** ElevenLabs Sound Effects API is primary; curated royalty-free is the fallback. Every
   clip's `source` + `license` is in the catalog.
-- **Music.** Not in the SFX pass. Music is the final-mix step (`tools/gen_music.py` +
-  `tools/mix_music.py`, from `media/library/music/`).
+- **Music.** Chosen FIRST, because it sets the cut grid; mixed at the final-mix step
+  (`tools/gen_music.py` + `tools/mix_music.py`). Driving, mid-tempo (100 to 130 BPM), no vocals. The
+  existing `media/library/music/` tracks were generated on the template author's ElevenLabs account;
+  generate your own with `tools/gen_music.py` before publishing.
 - **Library is the durable asset:** `media/library/sfx/` (`catalog.json` + `clips/`). Reuse first.
