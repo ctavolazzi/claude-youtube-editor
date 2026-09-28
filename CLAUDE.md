@@ -52,9 +52,11 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
 - **Every finished video ships with its thumbnails.** When you render a video for YouTube, don't
   stop at the MP4. Run `/packaging` in the same pass: one fixed title, 3 thumbnail bets (A/B/C),
   `description.txt` with chapters, and the rendered thumbnails in `videos/<project>/packaging/thumbs/`.
-  Show the creator all three. With no face kit or no `GEMINI_API_KEY`, render them as Remotion stills
-  with the mascot as the "face" (see `videos/beeplumb-01-blank-canvas/packaging/packaging.md`
-  and `remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx`).
+  Show the creator all three, and say which one is the final (the upload default). With no face kit or
+  no `GEMINI_API_KEY`, build them as Remotion stills on `remotion/src/lib/thumbnail.tsx` and render
+  with `node remotion/scripts/render-thumbs.mjs` (worked example:
+  `remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx`). Read its `feed-check.jpg` before
+  shipping.
 
 - **Run everything from the repo root.** Tools resolve *engine* paths (media/library, catalogs,
   remotion/out) against their own location, but *project* paths against the CWD — so pass the project

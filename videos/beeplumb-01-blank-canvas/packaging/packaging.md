@@ -24,36 +24,44 @@ override these rules.
   negative framing. The rule it bends is magnet words: there's no Free, Unlimited or 100%. That's
   honest for a story video, which doesn't promise a free tool.
 
-## Thumbnail bets (A/B/C for Test & Compare)
+## Thumbnail bets (v2, after the critique)
+
+**A is the final:** set it as the default thumbnail at upload, then add B and C in Test & Compare.
 
 | | Hook | Lever | Combines with the title as | Honesty check |
 |---|---|---|---|---|
-| **A** | `77K → 0`, mascot shocked, red/orange burst | Number lead | "From Zero": *what* got left behind | The video says it: 77,000 followers under another name, left for a fresh start (0:56 chapter) |
-| **B** | `$100 /MONTH`, mascot happy, yellow burst | Price lead | "While Broke": the whole budget | The video says it: $100/mo for Claude vs $1,000 for an artist (2:06 chapter) |
-| **C** | `DAY 1`, a blank canvas with one brush stroke, violet/cyan | Object / own-metaphor lead | "From Zero": the first stroke | The video's spine: blank canvas, "the first brush stroke" outro |
+| **A (final)** | person icon + `77K` struck out → giant `0`, mascot shocked, red/orange | Number lead | "From Zero": what got left behind | Said at 0:56: 77,000 followers on a different account, left for a fresh start. The icon makes it read as followers, not dollars. |
+| **B** | `$100 /MONTH`, excited mascot holding up a bill, green | Price lead | "While Broke": the whole budget | Said at 2:06 ($100/mo for Claude vs $1,000 for an artist). It's a short beat, so B is the weakest-kept promise of the three. |
+| **C** | `I'M BROKE` + a censor bar (`#@$%!`), smug mascot, pink/violet | Curiosity (bleep) lead | "While Broke", literally | The video's funniest beat (2:06 chapter). It also signals "not a kids' channel". |
 
-The mascot stands in for a face. There's no face kit in `media/library/faces/`, and a big,
-expressive character is the same lever as a big expressive face. If you add a face kit later, a
-face-plus-mascot version of the winner is the obvious next test.
+What changed from v1 and why:
+- **The number got context.** A bare "77K" could be dollars, so a person icon now does that job without adding words.
+- **The drama is the size.** The 0 is now bigger than the 77K, and the 77K is crossed out.
+- **The mascot is outlined, with opaque wings,** so it can't blend into any background. On v1's B, its stripes melted into the yellow.
+- **B now shows excitement,** an open grin, instead of the flat smile the skill ranks lowest. B also got an object: the bill.
+- **C switched from `DAY 1` to the bleep.** "Day 1" is generic and has no stakes, and its canvas read as a whiteboard at phone size.
+- **The BEEPLUMB corner mark is gone.** It was unreadable at phone size, so it was clutter.
 
-**Prediction, not a verdict:** A is my guess for the highest CTR (a specific big number, a
-shocked face, a red frame). The test decides.
+**The known limit:** there's no human face yet. A cartoon mascot can read as kids' content. C pushes
+against that, but the real fix is a face kit (`media/library/faces/`) and a face-plus-mascot
+version of A.
+
+**Prediction, not a verdict:** A > C > B. The test decides.
 
 ## Rendering
 
-The thumbnails are Remotion stills (`remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx`)
-using the exact mascot from the video. No API key, fully offline, and re-renderable:
+The thumbnails are Remotion stills: `remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx`,
+built on the shared kit `remotion/src/lib/thumbnail.tsx`. No API key, fully offline:
 
 ```bash
 cd remotion
-for t in A B C; do
-  npx remotion still src/blank-canvas-thumbs-entry.tsx Thumb$t ../videos/beeplumb-01-blank-canvas/packaging/thumbs/$t.jpg \
-    --frame=20 --image-format=jpeg --jpeg-quality=92 --public-dir=../media
-done
+node scripts/render-thumbs.mjs src/blank-canvas-thumbs-entry.tsx ../videos/beeplumb-01-blank-canvas/packaging/thumbs
 ```
 
-The output is 1280x720 JPG at about 115 KB each (YouTube's limit is 2 MB). The JPGs are
-git-ignored like all rendered thumbnails. The TSX is the source.
+It writes `A.jpg`, `B.jpg`, `C.jpg`, `final.jpg` (a copy of A) and `feed-check.jpg` (all three at
+phone and sidebar size on YouTube's dark feed, with the title). **Read feed-check before
+shipping.** In v2 it caught a cropped preview, gray "ghost" wings and a word running into the
+mascot. The JPGs are git-ignored; the TSX is the source.
 
 ## Verify (all three passed)
 

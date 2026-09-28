@@ -133,6 +133,34 @@ on face and signs; natural color grade.
 STYLE: a believable candid desk photo — premium, bright, wholesome.
 ```
 
+## Route 2: Remotion stills (no API key, no face kit)
+
+Use this when there's no `GEMINI_API_KEY`, no face kit, the network blocks Google, or the channel
+has a mascot. Thumbnails are ordinary Remotion compositions built from the kit in
+`remotion/src/lib/thumbnail.tsx`: `Burst`, `Hook`, `StrikeBar`, `PersonIcon`, `Arrow`,
+`CensorBar` and `ThumbFeed`. Render them with:
+
+```bash
+cd remotion && node scripts/render-thumbs.mjs <entry.tsx> ../videos/<project>/packaging/thumbs
+```
+
+That renders every `Thumb<ID>` composition to `<ID>.jpg`, plus `final.jpg` (the first variant, the
+upload default) and `feed-check.jpg`. It fails if any file is over 2 MB. The worked example is
+`remotion/src/shots/beeplumb-01-blank-canvas/Thumbnails.tsx` with `src/blank-canvas-thumbs-entry.tsx`.
+
+Rules learned the hard way (Beeplumb #1 critique):
+- **A number needs context.** Pair it with an icon (a person for followers, a bill for money)
+  rather than more words.
+- **Make the drama the biggest thing.** In "77K → 0", the 0 is the story, so it gets the space.
+- **Outline the character** (Mascot `outline`) and don't reuse its colors in the background.
+  Glass or translucent parts go opaque when outlined.
+- **Excited beats smiling.** Use an open, high-energy expression (`mood="excited"`/`"shock"`),
+  never the closed flat smile.
+- **No tiny marks.** Anything illegible at 168px wide (the sidebar) is clutter.
+- **A cartoon mascot can read as kids' content.** Offset it with an adult-coded hook (the bleep),
+  and add a real face when a face kit exists.
+- **Read `feed-check.jpg` every time.** It's this route's version of the verify loop below.
+
 ## The verify loop (run on EVERY render before surfacing it)
 
 Read the generated image back and check — regenerate if any fail:

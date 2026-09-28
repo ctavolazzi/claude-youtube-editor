@@ -7,7 +7,7 @@ import mouthTrack from './vo-mouth.json';
 import { C, iio, E } from './common';
 
 const MOUTH = mouthTrack as number[];
-export type Mood = 'happy' | 'shock' | 'smug' | 'sad';
+export type Mood = 'happy' | 'excited' | 'shock' | 'smug' | 'sad';
 
 export const Mascot: React.FC<{
   x: number; y: number; size?: number; // center position, px width
@@ -18,27 +18,35 @@ export const Mascot: React.FC<{
   wave?: boolean;                       // right arm waves
   spin?: number;                        // frame to start a loop-de-loop
   flip?: boolean;
-}> = ({ x, y, size = 360, at = 0, out, talk = true, mood = 'happy', look = [0, 0], wave, spin, flip }) => {
-  const f = useCurrentFrame();
+  outline?: number;                     // px of black outline + drop shadow (thumbnails: separates it from any bg)
+  still?: boolean;                      // freeze bob/blink/flap/antennae at a flattering pose (thumbnails)
+  armUp?: boolean;                      // right arm raised, as if holding something up
+}> = ({ x, y, size = 360, at = 0, out, talk = true, mood = 'happy', look = [0, 0], wave, spin, flip, outline = 0, still, armUp }) => {
+  const cur = useCurrentFrame();
+  const f = still ? at + 20 : cur;
   if (f < at || (out !== undefined && f >= out + 8)) return null;
 
   const popIn = iio(f, [at, at + 12], [0, 1], E.pop);
   const popOut = out !== undefined ? iio(f, [out, out + 8], [1, 0], E.in) : 1;
-  const bob = Math.sin(f / 9) * 10;
-  const flap = 0.55 + 0.45 * Math.abs(Math.sin(f * 0.9));
-  const blink = f % 105 < 4 ? 0.12 : 1;
+  const bob = still ? 0 : Math.sin(f / 9) * 10;
+  const flap = still ? 1 : 0.55 + 0.45 * Math.abs(Math.sin(f * 0.9));
+  const blink = !still && f % 105 < 4 ? 0.12 : 1;
   const m = talk ? MOUTH[Math.min(f, MOUTH.length - 1)] ?? 0 : 0;
   const spinDeg = spin !== undefined ? iio(f, [spin, spin + 24], [0, 360], E.inOut) : 0;
-  const antWob = Math.sin(f / 7) * 6;
-  const waveDeg = wave ? -30 + Math.sin(f / 3.2) * 28 : 18;
+  const antWob = still ? 4 : Math.sin(f / 7) * 6;
+  const waveDeg = armUp ? -48 : wave ? (still ? -40 : -30 + Math.sin(f / 3.2) * 28) : 18;
 
-  const eyeScaleY = (mood === 'shock' ? 1.18 : mood === 'smug' ? 0.55 : 1) * blink;
+  const eyeScaleY = (mood === 'shock' || mood === 'excited' ? 1.18 : mood === 'smug' ? 0.55 : 1) * blink;
+  const o = outline;
+  const outlineFilter = o > 0
+    ? `drop-shadow(${o}px 0 0 #000) drop-shadow(-${o}px 0 0 #000) drop-shadow(0 ${o}px 0 #000) drop-shadow(0 -${o}px 0 #000) drop-shadow(0 ${o * 3}px 0 rgba(0,0,0,0.35))`
+    : undefined;
   const px = look[0] * 9, py = look[1] * 9;
 
   return (
     <div style={{
       position: 'absolute', left: x - size / 2, top: y - size / 2 + bob, width: size, height: size,
-      transform: `scale(${popIn * popOut}) rotate(${spinDeg}deg) scaleX(${flip ? -1 : 1})`,
+      transform: `scale(${popIn * popOut}) rotate(${spinDeg}deg) scaleX(${flip ? -1 : 1})`, filter: outlineFilter,
     }}>
       <svg viewBox="0 0 400 400" width={size} height={size} style={{ overflow: 'visible' }}>
         <defs>
@@ -53,9 +61,10 @@ export const Mascot: React.FC<{
         </defs>
 
         {/* wings */}
-        <g opacity={0.85}>
-          <ellipse cx={112} cy={130} rx={62} ry={92 * flap} transform={`rotate(-32 112 ${130})`} fill="rgba(205,235,255,0.55)" stroke="#fff" strokeWidth={4} />
-          <ellipse cx={288} cy={130} rx={62} ry={92 * flap} transform={`rotate(32 288 ${130})`} fill="rgba(205,235,255,0.55)" stroke="#fff" strokeWidth={4} />
+        {/* outlined (thumbnail) wings are opaque: the outline's drop-shadows would show through glass wings as gray */}
+        <g opacity={o > 0 ? 1 : 0.85}>
+          <ellipse cx={112} cy={130} rx={62} ry={92 * flap} transform={`rotate(-32 112 ${130})`} fill={o > 0 ? '#dff3ff' : 'rgba(205,235,255,0.55)'} stroke="#fff" strokeWidth={4} />
+          <ellipse cx={288} cy={130} rx={62} ry={92 * flap} transform={`rotate(32 288 ${130})`} fill={o > 0 ? '#dff3ff' : 'rgba(205,235,255,0.55)'} stroke="#fff" strokeWidth={4} />
         </g>
 
         {/* arms (left static, right waves) */}
@@ -100,6 +109,10 @@ export const Mascot: React.FC<{
           <path d="M122 140 Q 150 118 176 134" stroke="#241030" strokeWidth={7} fill="none" strokeLinecap="round" />
           <path d="M224 134 Q 250 118 278 140" stroke="#241030" strokeWidth={7} fill="none" strokeLinecap="round" />
         </>)}
+        {mood === 'excited' && (<>
+          <path d="M120 132 Q 150 108 180 126" stroke="#241030" strokeWidth={8} fill="none" strokeLinecap="round" />
+          <path d="M220 126 Q 250 108 280 132" stroke="#241030" strokeWidth={8} fill="none" strokeLinecap="round" />
+        </>)}
         {mood === 'sad' && (<>
           <path d="M126 148 Q 150 142 174 130" stroke="#241030" strokeWidth={7} fill="none" strokeLinecap="round" />
           <path d="M226 130 Q 250 142 274 148" stroke="#241030" strokeWidth={7} fill="none" strokeLinecap="round" />
@@ -123,7 +136,13 @@ export const Mascot: React.FC<{
         <ellipse cx={290} cy={232} rx={20} ry={12} fill="#ff6fae" opacity={0.55} />
 
         {/* mouth */}
-        {m > 0.06 || mood === 'shock' ? (
+        {mood === 'excited' && m <= 0.06 ? (
+          <g>
+            <path d="M160 234 Q 200 236 240 234 Q 236 292 200 294 Q 164 292 160 234 Z" fill="#2a0a33" />
+            <path d="M166 238 L234 238 L230 250 L170 250 Z" fill="#fff" />
+            <ellipse cx={200} cy={278} rx={20} ry={10} fill="#ff5c8a" />
+          </g>
+        ) : m > 0.06 || mood === 'shock' ? (
           <g>
             <ellipse cx={200} cy={246} rx={22 + m * 10} ry={mood === 'shock' ? Math.max(20, 6 + m * 30) : 6 + m * 30} fill="#2a0a33" />
             <ellipse cx={200} cy={258 + m * 10} rx={13 + m * 5} ry={4 + m * 8} fill="#ff5c8a" />
