@@ -1,12 +1,17 @@
 # CLAUDE.md — claude-youtube-editor
 
-**You record the talking head. Claude Code does the rest.** Every screen moment — UI walkthroughs,
+**You record the voice (and the gameplay). Claude Code does the rest.** This repo is set up for
+**beeplumbgh**: commentary and philosophy-of-modern-life essays voiced over a constant game-footage
+background (see `docs/COMMENTARY.md` and `brand.md`). The talking-head flow below still works.
+
+**The original pitch: you record the talking head, Claude Code does the rest.** Every screen moment — UI walkthroughs,
 full-screen statements, diagrams, terminal mockups — is built as Remotion TSX and composited over
 your cut. No screen recording, no video editor. The right skill is picked from the request:
 
 | The user asks to… | Skill | Output |
 |---|---|---|
 | set up / change their brand, colors, fonts, wordmark | `/brand-setup` | `brand.md` + `remotion/src/{brand.ts,fonts.ts}` + a proof render |
+| make a commentary essay over gameplay / source clips + screenshots | `/commentary-essay` | beats over a gameplay bed, cited sources in `videos/<project>/work/sources.json` |
 | cut the raw footage / tighten pacing / remove fillers | `/clean-cut` | master cut + `videos/<project>/work/{analysis/cuts.json, edited-transcript.json}` |
 | build the visual beats / add overlays | `/make-tsx` (+ `/fake-screencast`) | shots in `remotion/src/shots/<project>/` + a baked preview |
 | write a crash-free TSX shot | `/vidtsx-2d-generator` | the low-level Remotion authoring rules |
@@ -30,7 +35,7 @@ tools/            Python tools (see requirements.txt); the cut-editor UI in tool
                   RNNoise models in tools/models/rnnoise/
 remotion/         the Remotion project — src/lib/ (kit, browser, screencast, vscode),
                   src/shots/<project>/; registry is GENERATED (npm run gen)
-media/            Remotion's public root: library/ (reusable: sfx, music, logos, faces)
+media/            Remotion's public root: library/ (reusable: sfx, music, logos, faces, gameplay)
                   + projects/<project>/ (media for ONE video — via staticFile('projects/<p>/x'))
 videos/           per-video project data — EMPTY until you make one. See videos/README.md
 brand.md          the style contract
@@ -41,6 +46,10 @@ brand.md          the style contract
 `remotion/src/shots/example/` is **37 real shots** from a published video — the worked example of the
 kit. They render standalone with no footage: `cd remotion && npm run studio`. Read a few before
 authoring new ones; that's the fastest way to learn `remotion/src/lib/`.
+
+`remotion/src/shots/beeplumb/` is the **commentary kit demo**: every beat type from
+`remotion/src/lib/commentary.tsx` (thesis, chapter, quote, source, clip, term, stat, versus, lower
+third, end card) over a placeholder gameplay bed, plus `EssayReel`, the whole kit as one 46s piece.
 
 `remotion/src/shots/brand/BrandProof.tsx` is not a video beat — it's a utility shot that renders the
 current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses it.

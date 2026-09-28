@@ -94,7 +94,7 @@ const BrandProof: React.FC = () => {
 
         {/* ---- accent-on-paper legibility, the pair most likely to fail ---- */}
         <div style={{ ...rise(76, 16), marginTop: 30, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 34, color: COLORS.ink }}>
-          A key word rendered in <span style={{ color: COLORS.accent }}>your accent</span> — is it legible?
+          A key word rendered in <span style={{ color: COLORS.accent }}>your accent</span>. Is it legible?
         </div>
 
       </AbsoluteFill>
