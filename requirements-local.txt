@@ -1,0 +1,16 @@
+# FREE, LOCAL replacements for the paid APIs (no keys, nothing leaves your machine).
+# Install into the same venv as requirements.txt:
+#     ./venv/bin/pip install -r requirements-local.txt          # macOS/Linux
+#     venv/Scripts/python -m pip install -r requirements-local.txt   # Windows
+# then:  python tools/install_local_ai.py all     (DeepFilterNet binary + a Whisper model)
+#        python tools/install_local_ai.py check   (what's working)
+
+faster-whisper>=1.1       # transcribe_local.py: word-level transcription (MIT), replaces AssemblyAI
+auto-editor>=29           # auto_cut.py: silence-detection first pass + NLE timeline export (Unlicense)
+
+# Optional, heavy (pulls PyTorch, several GB): tighter word timing for transcribe_local.py --align.
+# whisperx>=3.4           # BSD-2
+
+# Not pip packages:
+#   DeepFilterNet  -> python tools/install_local_ai.py deepfilter   (clean_voice.py --method deepfilter)
+#   ACE-Step 1.5   -> its own server, see: python tools/gen_music_local.py --help

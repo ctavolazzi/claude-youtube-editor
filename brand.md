@@ -1,113 +1,146 @@
-# Brand — the house style the example video ships with
+# Brand: beeplumbgh
 
 > Style contract for every long-form video this repo produces. Every step-2+ skill (TSX overlays,
-> full-screen animations, diagrams, SFX) reads this file so all videos feel like one channel.
-> **This is the look the `video-1` example was built in — keep it, tweak it, or replace it wholesale
-> with your own brand.** If you change it, also update `remotion/src/brand.ts` (the same tokens, as code).
-> A calm, premium, modern **AI-studio** aesthetic (reference polish: Linear / Vercel / Anthropic).
+> full-screen beats, diagrams, SFX) reads this file so all videos feel like one channel.
+> `remotion/src/brand.ts` + `remotion/src/fonts.ts` are the same contract as code; change all three
+> together (or run `/brand-setup`).
+>
+> **The channel:** commentary on modern life, the philosophy of living in it, and practical
+> strategies for moving through it, voiced over a **constant game-footage background**. Think video
+> essay, not tutorial. The site (beeplumbgh.net) is a black terminal in Courier with honey and plum;
+> the videos are its cinematic cousin.
 
 ## 1. Identity & voice
 
-- **Positioning:** modern **AI-studio** aesthetic — light, airy, whitespace, soft depth, tasteful
-  motion. Reference polish: **Linear / Vercel / Anthropic**. Premium and calm, never loud or cluttered.
-- **Voice:** direct, confident, generous (free resources), personal (the presenter in the loop). No
-  hype-filler. On-screen text deliberately **avoids em-dashes** — keep that in overlays too.
-- **Energy for video:** clean and premium, not MrBeast-loud. Motion is *tasteful*, not bouncy/cartoonish.
-  (No hard offset shadows, thick black borders, or sticker-pop "Memphis" looks — that style is retired.)
+- **Positioning:** a late-night video essay. Dark, literary, a little conspiratorial, never doom.
+  The game is the room we are sitting in while we talk; the words are the point.
+- **Voice:** direct, curious, specific. Earn every claim: a quote has an author, a number has a
+  source, a clip is credited on screen. Name the trap, then give the move. **On-screen text never
+  uses em dashes.**
+- **Energy:** HOT. Kinetic type, a moving camera, cuts on the beat. The essay is thoughtful; the
+  edit is not sleepy. (A calm first pass was rejected as boring: see §6.) Quiet moments are allowed
+  as deliberate contrast, never as the default.
 
 ## 2. Logo / wordmark
 
-- **Wordmark:** your channel wordmark — set it once and reuse it as the brand lockup (the example
-  renders a two-tone wordmark with the middle word in the indigo accent, in Space Grotesk, tight).
-- No standalone logo mark is required (a favicon is enough). Use the wordmark as the lockup.
-- Drop any portrait / brand-bumper assets you want to reuse under `media/library/` (e.g. a `logos/`
-  or `faces/` entry) and reference them from shots via `staticFile('library/...')`.
+- **Wordmark:** `bee` + *`plumb`* + `gh` (`BRAND.wordmark = ['bee','plumb','gh']`). Fraunces Black;
+  the middle word in honey italic, `gh` in muted. "Plumb": to test a thing against true.
+- **Sign-off:** "Measure it true." · **Handle:** @beeplumbgh · **Site:** beeplumbgh.net
+- **Signature motif: the plumb line.** A thin honey thread drops from the top edge and a bob
+  settles (`PlumbLine` in `remotion/src/lib/commentary.tsx`). It marks theses, chapter breaks and
+  the end card. Use it on those beats only, so it keeps meaning something.
 
 ## 3. Color palette (exact hex)
 
+Dark base. Role names are the house template's, so read them by role: `paper` is the base surface
+(near-black), `ink` is primary text (bone).
+
 | Role | Name | Hex | Use in video |
 |---|---|---|---|
-| **Primary accent** | indigo | `#6366F1` | key words, highlights, active state, progress, CTAs, the accent word |
-| Secondary accent | violet | `#9b7cc4` | pairs with indigo in gradients, secondary emphasis |
-| Success / positive | teal | `#4db8a8` | "free", confirms, checkmarks, positive callouts |
-| Success alt | green | `#4ecdc4` | teal companion for gradients/success |
-| Warn / attention | yellow | `#f5d76e` | highlight sweeps, "watch this", attention pops |
-| Danger / contrast | pink | `#e8879f` | errors, "the hard/expensive way", negative contrast |
-| Ink (text/dark) | ink | `#1a1a2e` | primary text on light; base dark bg |
-| Muted text | muted | `#6b6b7b` | secondary text, captions |
-| Surface (paper) | paper | `#fffef7` | light full-screen bg, cards |
-| Surface 2 (cream) | cream | `#faf8f5` | alt light band |
+| **Primary accent** | honey (the bee) | `#F5C518` | key words, marker sweeps, the wordmark middle, plumb line |
+| Secondary accent | plum (the plum) | `#B06EE0` | chapter numerals, quote marks, secondary emphasis |
+| Positive / strategy | cyan-teal | `#3FD0C9` | "the move", the strategy side of a contrast, confirms |
+| Positive alt | terminal green | `#00CC44` | companion to cyan, terminal nods |
+| Attention | ember | `#FF8A3D` | "watch this", warnings, gradient midpoint |
+| Negative / trap | hot pink | `#EE4A90` | the trap, the cost, CLIP tags |
+| Ink (text) | bone | `#EDE8DC` | primary text |
+| Muted text | ash | `#9E97AB` | citations, secondary labels |
+| Surface (base) | night | `#0B0A0D` | full-screen base, scrim color over gameplay |
+| Surface 2 (raised) | dusk | `#17141C` | quote plates, cards |
+| Rule | line | `#2E2837` | 1px borders and dividers |
 
-**Dark UI / terminal scale** (GitHub-ink — for Claude Code terminal & code mockups):
-`#0d1117` (bg) · `#161b22` (panel) · `#30363d` (border) · `#8b949e` (dim text) · `#c9d1d9` (text).
+**Contrast (measured):** ink/paper 16.2:1 · muted/paper 7.0:1 · muted/cream 6.5:1 ·
+accent/paper 12.1:1 · paper-on-accent (pills) 12.1:1 · plum/paper 5.8:1 · pink/paper 5.7:1.
+Everything clears its gate; plum and pink are for large type and tags, not small body copy.
 
-**Signature gradient:** indigo → violet → teal (`#6366F1 → #9b7cc4 → #4db8a8`). Used for dividers and
-full-screen animated backgrounds.
+**Dark UI / terminal scale** (GitHub-ink, for terminal and code mockups):
+`#0d1117` · `#161b22` · `#30363d` · `#8b949e` · `#c9d1d9`.
+
+**Signature gradient:** honey → ember → plum (`#F5C518 → #FF8A3D → #B06EE0`). Chapter rules and the
+end-card underline. Never as a full-screen fill: the gameplay is the background.
 
 ## 4. Typography (3-font system)
 
 | Role | Font | Weights | Use |
 |---|---|---|---|
-| **Display / headlines** | **Space Grotesk** | 500 / 600 / 700 | titles, big statements, section cards, the wordmark |
-| **Body / UI** | **Inter** | 400 / 500 / 600 | subtitles, labels, body text, lower-third detail |
-| **Code / mono** | **JetBrains Mono** | 400 / 500 / 700 | terminal mockups, code, prompts, file paths, tech labels |
-| **Claude wordmark serif** | **Source Serif 4** (`FONT_EDITORIAL`) | 600 | "Claude …" wordmark clones (Claude Editor, Claude Code) — the Copernicus stand-in |
+| **Display** | **Fraunces** (+ italic) | 400 / 600 / 700 / 900 | theses, chapter titles, pull quotes (italic), the wordmark, big numbers |
+| **Body / UI** | **Inter Tight** | 400 / 500 / 600 / 800 | subtitles, lower-third detail, definitions |
+| **Mono** | **Courier Prime** | 400 / 700 | citations, tags, timestamps, URLs: the beeplumbgh.net terminal |
 
-All load from `@remotion/google-fonts` (see `remotion/src/fonts.ts`) — nothing to install.
-Headlines tight tracking; body normal; mono for anything literally code/terminal/paths.
-**Wordmark rule (video-5 creator feedback):** Claude wordmarks use Source Serif 4 at 600 — Spectral
-(`FONT_SERIF`) reads too thin/bookish next to the real Copernicus and is retired for wordmarks.
+All load from `@remotion/google-fonts` (`remotion/src/fonts.ts`). Display tracks tight (−1 to −3px
+at size); mono tags are UPPERCASE with wide tracking (3px). `FONT_SERIF` (Spectral) stays only for
+the Claude Code wordmark clone in the example shots; it is not a brand font.
 
 ## 5. Shape & depth
 
-- **Radius:** ~14px (cards/panels), pills fully rounded. Terminal/code windows: ~10px with a title bar.
-- **Depth:** **soft shadows** (e.g. `0 8px 32px rgba(0,0,0,.10)`), 1px light borders. Airy.
-- **Never:** hard offset shadows (`4px 4px 0 #000`), 3px black borders, sticker/pop look → retired.
-- **Window chrome** (browser/terminal mockups): rounded panel, top bar with 3 traffic-light dots
-  + a mono label; content on the dark ink scale.
+- **Radius:** 10px cards, 8px panels and windows, pills round. Editorial, not bubbly.
+- **Depth:** deep shadow plus a faint bone rim (`SHADOW.card`), because soft grey shadows vanish on a
+  dark base. Cards sit on a `cream` plate at ~90% opacity so the game still breathes through.
+- **Finish on every frame:** animated film grain (~9%) + faint CRT scanlines (~7%) + vignette. This
+  is what makes different games look like one channel. `Stage` applies it.
+- **Framing of third-party media:** clips and screenshots are ALWAYS framed (window, tag, credit
+  line), never full-bleed. Framing is part of the fair-use posture (it reads as quotation) and part
+  of the look.
 
-## 6. Motion language  ← *calm & premium*
+## 6. Motion language: kinetic, cut to the music
 
-Translated to video (Remotion, 60fps):
+Remotion, 60fps. The reference is `KineticReel` (`remotion/src/shots/beeplumb/`), built from
+`remotion/src/lib/kinetic.tsx` on top of the cards in `lib/commentary.tsx`.
 
-- **Entrances:** fade + rise. `opacity 0→1` and `translateY 24px→0` over ~14 frames (~0.23s), ease-out
-  (or spring: damping 200, mass 0.8, stiffness 120). Calm, no overshoot/bounce.
-- **Exits:** fade + fall ~10 frames.
-- **Emphasis:** indigo highlight/underline wipe behind a key word over ~8 frames; scale pop max 1.03.
-- **Stagger:** 3–4 frames between list items / lines.
-- **Backgrounds:** slow drifting indigo/violet/teal gradient blobs + a faint dotted grid, 8–20s loops.
-- **Feel:** premium, restrained, "Linear/Anthropic." No spins, no elastic, no hard snaps.
+- **Cut to the music.** Pick the track first and find its grid: at 120 BPM a beat is 30 frames and a
+  bar is 120 (`beat(n)` / `bar(n)`). Scene changes land on bars, slams land on beats. With a voice,
+  the voice wins: cut on its sentence boundaries, slam on its stressed words, and nudge to the
+  nearest beat when it is within ~4 frames.
+- **The bed never stops,** and it moves: forward motion, banking, a speed surge on every scene cut.
+  Real gameplay gets the same treatment (push-in, desaturate ~35%, darken ~30 to 55%).
+- **Type slams.** Words arrive big and blurred and snap to size with overshoot (`Slam`, `SlamLine`),
+  one word or phrase per beat. Two voices of type: **INTER TIGHT 800 CAPS** for the shout, *Fraunces
+  Black Italic* for the thought. The key word goes honey, oversized, with a hit.
+- **The camera is alive.** Constant slow 3D drift, a punch-in (+7%) and a short shake on every hero
+  hit (`Camera`). Flash frame on the 3 to 5 biggest hits.
+- **Transitions have direction:** whip with directional motion blur (default), whip-up for
+  lists/numbers, zoom-through into chapter cards, RGB glitch into titles and clips. Scenes overlap by
+  5 frames so the whips cross. No plain crossfades.
+- **Annotate like a person:** hand-drawn circles, underlines, arrows, crosses and checks that draw
+  themselves on (`Scribble`); rubber stamps (`Stamp`) for SOURCE / CITED / dates; tape and halftone
+  on source screenshots; typewriter mono for citations (`Typed`).
+- **Finish:** letterbox bars, grain, faint scanlines, vignette on every frame.
+- **Pacing:** a new visual idea every 2 to 4 seconds in the hook, every 4 to 8 in the body. If a card
+  holds longer than 8 seconds, something on it must still be moving or arriving.
+- **Never:** crossfades as the default, bouncy cartoon easing on body text, more than one glitch
+  transition in a row, glitch over a line that needs to be read.
 
-**Hook-beat exception (first ~10s + intro cutaways — video-5 creator feedback).** The opening
-sequence runs HOTTER than the body: branded app-UI spectacle (e.g. the Claude Editor shell) with
-the creator's REAL footage inside, editing visibly happening ON the footage (auto-captions,
-punch-in + flash, color-grade wipe, lower-third, SFX chip, ripple-deletes on a timeline), overshoot
-pops allowed, and a climax stamp. The discipline that keeps it premium instead of chaotic:
-**one readable editing event at a time**, each synced to its narration word — never two headline
-events at once. Escalate: scan → cut → punch-in → grade → fly-in → stamp.
+**The beat grammar** (all in `remotion/src/lib/commentary.tsx`):
 
-**Step markers & punchlines (video-5 creator feedback).** Every "step N" narration line gets the
-full-screen StepTitle card (`remotion/src/lib/step-title.tsx`), label block-wiping on its word. When
-a line turns personal or lands a punchline ("the only thing I record is my face", "sorry video
-editors"), cut back to the creator FULL SCREEN with a slow punch-in — graphics never cover a
-punchline. Face gags match the line's tone: playful joke = mime-bump squash; dry line = dry zoom,
-no gag.
+| Beat | Component | When |
+|---|---|---|
+| Thesis | `ThesisCard` | the claim of the video, or of a chapter |
+| Chapter break | `ChapterCard` | every act; 3 to 6 per video |
+| Pull quote | `QuoteCard` | someone said it better; always author + work + year |
+| Cited source | `SourceCard` | an article, paper, post or chart; screenshot + outlet + URL, highlight the line |
+| Quoted clip | `ClipFrame` | a short excerpt you are responding to; credited on screen |
+| Coined term | `TermCard` | naming the idea so viewers can carry it out of the video |
+| Number | `StatCallout` | a figure with its source line; no source, no stat |
+| Trap vs move | `VersusCard` | the strategy beat: what people do vs what to do |
+| Name a person / thing | `LowerThird` | alpha overlay, bottom-left |
+| What's on screen | `GameCredit` | top-right chip naming the game; on every bed |
+| End | `CommentaryEnd` | wordmark, sign-off, next video |
 
 ## 7. Video delivery specs
 
-- **Canvas:** 3840×2160 (4K), **60 fps** — match the master cut's frame rate (the `video-1` example
-  master is 4K60). (Design at 1920×1080 ×2 scale is fine; composite at 4K.)
-- **Safe margins:** keep text ≥ 5% from edges (title-safe ~7.5%). Lower-thirds in the bottom ~12–18% band,
-  left-aligned to the margin.
-- **Talking head is CENTER-framed.** Overlays live in the **top and bottom bands**, or become
-  **full-screen cutaways** (cut away from the presenter entirely to a full-screen TSX beat). Never cover
-  the center-framed presenter.
-- **Overlay types:** lower-third (name/term), keyword callout, full-screen statement/section card,
-  animated diagram, UI/terminal mockup (TSX-first).
-- **Visual editing rules** (honored by `/make-tsx`): concept beats = full-screen cutaways; overlays only
-  for small persistent CTAs/badges; visuals sync to narration and never pre-empt it; real UI / real pages
-  for config and service facts.
-- **Captions:** overlays only (not word-level captions) for long-form.
+- **Canvas:** 1920×1080 design space, **60 fps**, rendered at scale 2 (4K) by `render-all.mjs`.
+  **The fps must match the master** (the gameplay + voiceover export). Game capture is almost always
+  60fps; if you capture at 30, change it here and in each shot's `compositionConfig`.
+- **The master** for this format is the **gameplay bed with the voiceover mixed in** (no talking
+  head required). `/clean-cut` still cuts the VOICE; the gameplay is laid under the cut voice, not cut
+  with it.
+- **Safe margins:** text ≥ 5% from edges (title-safe ~7.5%). Lower-thirds bottom-left; the
+  `GameCredit` chip top-right; keep the game's own HUD corners clear where possible.
+- **Two ways to put a beat on screen:** `cutaway` (the shot draws its own bed via `Stage`, full
+  frame) or `overlay` (`Stage bed="none"` + `transparent: true`, composited over the master by
+  `tools/bake.py`). Prefer overlays for lower-thirds and chips, cutaways for cards.
+- **Captions:** burned-in word captions are optional for this format (commentary benefits from them
+  on mobile); if used, Inter Tight 800, bone on a night pill, bottom-center, one line.
 
 ## 8. Asset & source locations
 
@@ -120,77 +153,54 @@ no gag.
 
 ## 9. Locked decisions & still-open
 
-- **Brand = a modern AI-studio look** — indigo accent, 3-font system. ✓
-- **Motion = calm & premium** — restrained fade-and-rise, no bounce (§6). ✓
-- **Framing = centered** — overlays top/bottom band or full-screen cutaway; never cover center. ✓
-- **SFX taste (step 4):** subtle premium accents. See §10.
+- **Format = voiceover essay over constant gameplay.** ✓
+- **Palette = honey + plum on night**, matching beeplumbgh.net. ✓
+- **Type = Fraunces / Inter Tight / Courier Prime.** ✓
+- **Motion = kinetic, cut to the music;** slams, whips, camera punches, hand-drawn marks. ✓
+- **Third-party media = framed, credited, logged** in `videos/<project>/work/sources.json`
+  via `tools/grab_source.py`. See `docs/COMMENTARY.md` for the fair-use rules. ✓
+- **Open:** a music bed. Lo-fi / ambient under the voice is the likely call; decide at the final mix.
+- **Open:** confirm capture fps (60 assumed) against the first real master.
 
-*(Swap any of these for your own brand's decisions — this is the example channel's contract.)*
+## 10. Sound design: SFX
 
-## 10. Sound design — SFX
+The game audio is **muted** under the essay (or ducked to a bed at ~−28 dB if its ambience helps).
+A **music bed runs the whole video** and sets the cut grid (§6). SFX are the punctuation: present
+and punchy on the hits, still always under the voice.
 
-Same energy as the motion: **calm/premium, felt-not-heard.** Reference feel is Linear / Anthropic /
-Vercel product sound, NOT MrBeast-loud. SFX are seasoning on the edit, never the show.
+**Choose every cue by its FUNCTION** (3+1 foundational sounds do the heavy lifting):
 
-**Choose every cue by its FUNCTION** (the pro-editor model — 3+1 foundational sounds do the heavy
-lifting; thousands of files are a trap). Ask what the beat needs:
-
-| Function | Sound | Its job | Our (calm) sub-types |
+| Function | Sound | Its job | Our sub-types |
 |---|---|---|---|
-| **Motion** | whoosh | direction/speed; carry one shot into the next | `whoosh-soft` (quick cut), `whoosh-wind` (soft, gliding) |
-| **Tension** | riser | "something is coming"; hold on the edge before a reveal | `riser-soft` (gentle; NO cymbal-urgency riser) |
-| **Emphasis** | impact / pop | "this moment matters"; lands as the new shot appears | `impact-soft`, `impact-deep-soft` (reveal, long tail), `pop-reveal` (UI reveal) |
-| **Snap** | click | small, satisfying, alive; a sequence of related shots each on a click | `ui-click-soft`, `ui-toggle-on`, `ui-send` |
+| **Motion** | whoosh | carry one idea into the next | `whoosh-soft` (card in), `whoosh-wind` (chapter break) |
+| **Tension** | riser | "something is coming" | `riser-soft` (only before a thesis or chapter reveal) |
+| **Emphasis** | impact | "this moment matters" | `impact-deep-soft` (thesis landing, chapter numeral), `impact-soft` |
+| **Snap** | click / type | small, precise, alive | `ui-click-soft` (marker sweep, tag), typewriter tick for mono citations |
 
-Plus two brand-specific extras: `page-flip` (storybook) and `chime-reward` (the "free"/gift moment).
+Plus the brand extras: a low **tape-stop / VHS rewind** before a quoted clip (the "we're quoting
+someone" signal), and a soft **film-projector click** on source cards.
 
-- **Taste — subtle premium accents.** Quiet, tasteful, always UNDER the voice. Silence is part of
-  the mix; never wall-to-wall. Nothing ever pops louder than the voice.
-- **Layer for the big moments (build-and-drop).** The magic is in stacking: **riser → impact** on a
-  scripted reveal (e.g. "wait a few minutes … *boom*"), **whoosh → pop/impact** so a cut stands out.
-  In the plan a layer is just two events at the same/adjacent `at_s` that sum. Reserve layering for the
-  2–3 biggest moments; keep everything else single and sparse.
-- **Density — propose only what really matters.** Score the signature moment of a beat, not every
-  sub-frame. A click-sequence (3–4 related shots each on a click) counts as ONE gesture. **There is no
-  optional tier**: video-5 shipped 131 cues with 31 flagged `optional`, and the creator cut the whole
-  tier wholesale at first listen. A cue you would flag as deniable is a cue you don't propose.
-- **What does NOT earn a cue** (each of these was proposed on video-5 and cut):
-  · **clicks on decorative animation** — card cascades, chip runs, hover pops. A click-sequence earns
-  its clicks only when the narration ENUMERATES the items and each click lands on the word (the kept
-  tile/row runs); a purely visual run gets silence.
-  · **whooshes on secondary cutaways** — whoosh the cuts that change the argument (step titles, a
-  scene the narration pivots into), never every mid-beat panel, scrub, or B-roll arrival.
-  · **ambient texture under speech** — soft typing, pencil scribbles, shimmers, draw-along winds. The
-  static/glitch rule generalizes: ALL decorative texture, not just noisy texture.
-  · **a second sound inside one gesture** — the extra pop after a whoosh, a riser on a minor reveal.
-  Layering stays reserved for the 2–3 hero moments.
-- **Sync — to the VISUAL beat, and often the exact word.** A click on the toggle flip; a pop on the
-  reveal; a whoosh on the cutaway; the impact on the drop word. Time off the shot's animation frames
-  AND `edited-transcript.json` word times.
-- **Levels.** Library clips are loudness-normalized to **~−20 LUFS** with a −1.5 dBFS peak ceiling, so a
-  plan's per-cue `gain_db` is perceptually meaningful. The voice is ~−17 LUFS, so gain sets how far
-  under it a cue sits: **payoffs ~−5/−6 · transitions ~−6/−8 · bed/texture ~−9/−11.** The SFX bus is
-  **lightly ducked under the voice** (gentle sidechain, ~4 dB) in the audition mix; final
-  polish/ducking/loudness is the final-mix step's job.
-- **Signature motif.** Pick a recurring UI sound (the example uses a "Free Image Generator" toggle click
-  — intro enable → later callback), the same `ui-toggle-on`, as a small sonic through-line.
-- **Meme gags — the sanctioned exception.** A deliberate, self-aware meme effect (fisheye snap +
-  `meme-boom`, mime bump, crash zoom — the library is `remotion/src/lib/effects.tsx` + SFX category
-  `meme`) is allowed **at most 1–2 times per video**, only on a playful punchline line, never on a dry
-  or informational one. Its sound is the one cue allowed to be deliberately LOUD (positive `gain_db`) —
-  the loudness IS the joke — and it must land as a hard snap on the punchline word, paired with its
-  visual. Grammar: snap, not morph. More than two per video and the premium feel of everything else
-  erodes; at that point cut the weakest.
-- **What we deliberately do NOT do** (take the pro's *structure*, not the drama): cymbal-urgency risers,
-  trailer-slam impacts, a whoosh on every movement, "funny" click+whoosh gags. **No static/glitch
-  textures under narration** — glitch reads as NOISE over the voice at any gain; error/delete moments
-  during speech get silence or one clean mechanical snap, never sustained static (save glitch textures
-  for gaps where the voice is silent).
-- **Source.** ElevenLabs **Sound Effects API** is primary (owned, consistent, reusable); curated
-  royalty-free is the fallback. Every clip's `source` + `license` is recorded in the catalog.
-- **Music.** No music bed in the SFX pass. Music (track selection + auto-ducking) is the final-mix step
-  (`tools/gen_music.py` + `tools/mix_music.py`, drawing from `media/library/music/`).
-- **Library is the durable asset.** Shared, cross-project at **`media/library/sfx/`** (`catalog.json` +
-  `clips/`), seeded from `palette.json`, organized by function. It GROWS every video — reuse before
-  generating (library-first). SFX that must live *inside* a Remotion shot go in `media/library/sfx/` via
-  `staticFile()`.
+- **Taste:** punchy on hits, quiet everywhere else. Nothing louder than the voice. Every whip gets a
+  whoosh, every slam of a hero word gets an impact, every stamp gets a stamp hit, every glitch gets a
+  zap. Decorative motion gets nothing.
+- **Layer for the hero moments** (riser → glitch → impact into the title; whoosh → impact on the
+  biggest reveal). About one layered moment per chapter.
+- **Density:** one cue per beat, on the beat's signature moment. A card cascade gets one sound, not
+  one per card.
+- **Never:** ambient texture under speech, glitch/static under narration, meme booms (this channel
+  doesn't do them), trailer slams, a whoosh on every card.
+- **Clip audio:** a `ClipFrame` plays its own audio; the voice stops for it. Duck any bed fully
+  during a clip.
+- **Levels.** Library clips are normalized to **~−20 LUFS**, −1.5 dBFS peak. Voice ~−17 LUFS. Gains:
+  **payoffs ~−6 · transitions ~−8 · bed/texture ~−11.** Light sidechain duck (~4 dB) under the voice.
+- **Signature motif:** the plumb-line drop gets the same soft low `impact-deep-soft` every time it
+  appears, so it becomes the channel's sound.
+- **Source.** ElevenLabs Sound Effects API is primary; curated royalty-free is the fallback. Every
+  clip's `source` + `license` is in the catalog.
+- **Music.** Chosen FIRST, because it sets the cut grid; mixed at the final-mix step
+  (`tools/gen_music.py` + `tools/mix_music.py`). Driving, mid-tempo (100 to 130 BPM), no vocals. The
+  original `media/library/music/` tracks were generated on the template author's ElevenLabs account;
+  generate your own before publishing: `tools/gen_music_local.py` (ACE-Step 1.5, MIT, free, the output is
+  yours) from the palette's beeplumbgh beds (`night-drive` 120, `essay-lofi` 88, `tension-pulse` 110,
+  `reflect-keys` 72 BPM), or `tools/gen_music.py` on your own ElevenLabs account.
+- **Library is the durable asset:** `media/library/sfx/` (`catalog.json` + `clips/`). Reuse first.

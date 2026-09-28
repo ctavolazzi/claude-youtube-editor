@@ -4,6 +4,8 @@
 .youtube/
 
 # python
+# downloaded local-AI binaries (tools/install_local_ai.py)
+tools/bin/
 __pycache__/
 *.pyc
 venv/
@@ -55,3 +57,11 @@ media/library/faces/*.webp
 .idea/
 .DS_Store
 Thumbs.db
+
+# gameplay beds + third-party clips/screenshots: re-grabbable, not ours to redistribute.
+# Their catalogs and videos/<project>/work/sources.json ledgers ARE committed.
+media/library/gameplay/*.mp4
+media/library/gameplay/*.mkv
+media/library/gameplay/*.mov
+media/projects/*/clips/
+media/projects/*/sources/

@@ -1,6 +1,6 @@
 ---
 name: clean-audio
-description: Voice/audio cleanup step of the AI Video Editor pipeline — diagnose a video's background noise, pick the right denoise method, and produce a cleaned master (voice isolated, levels preserved, video stream copied). Use when the user wants to "clean the audio / voice", "remove background noise", "denoise", "isolate voice", fix outdoor/room/water/hum/hiss noise, run ElevenLabs Voice Isolator or local RNNoise, A/B denoise methods, or produce a cleaned master for a video-N in this repo. Covers diagnosing the noise (spectrogram + levels), choosing eleven vs rnnoise by noise type, the sample A/B, tools/clean_voice.py, preserving levels (RMS-match, not LUFS), and rewiring the pipeline to the clean master. Not the SFX/music mix (that is /suggest-sfx + the final-mix step) and not the cut (that is /clean-cut).
+description: Voice/audio cleanup step of the AI Video Editor pipeline — diagnose a video's background noise, pick the right denoise method, and produce a cleaned master (voice isolated, levels preserved, video stream copied). Use when the user wants to "clean the audio / voice", "remove background noise", "denoise", "isolate voice", fix outdoor/room/water/hum/hiss noise, run local DeepFilterNet, ElevenLabs Voice Isolator or RNNoise, A/B denoise methods, or produce a cleaned master for a video-N in this repo. Covers diagnosing the noise (spectrogram + levels), choosing deepfilter vs eleven vs rnnoise by noise type, the sample A/B, tools/clean_voice.py, preserving levels (RMS-match, not LUFS), and rewiring the pipeline to the clean master. Not the SFX/music mix (that is /suggest-sfx + the final-mix step) and not the cut (that is /clean-cut).
 ---
 
 # clean-audio — voice cleanup
@@ -18,11 +18,17 @@ The engine is **`tools/clean_voice.py`**; this skill is the judgment around it: 
 | Method | What it is | Use when | Cost |
 |---|---|---|---|
 | **`--method eleven`** | ElevenLabs Voice Isolator (cloud ML voice/noise separation) | **Dynamic, broadband noise in the voice band** — outdoor running water, wind, traffic, crowd, cafe. Local tools CANNOT remove these. | ~1000 credits/min (~$1 for a 5.5-min video); needs `ELEVENLABS_API_KEY` |
-| **`--method rnnoise --model sh`** (or `cb`) | Local RNNoise via ffmpeg `arnndn` (models in `tools/models/rnnoise/`) | **Stationary / mild** noise (steady hiss, fan, some room tone). Free/offline. Only PARTIALLY removes dynamic noise. | free |
+| **`--method deepfilter`** | Local DeepFilterNet3 (48 kHz full-band neural denoiser; `python tools/install_local_ai.py deepfilter`) | **The default first try.** Fans, AC, room tone, hum, keyboard, street and general background. Free/offline, seconds per minute of audio. `--atten 12` caps it at 12 dB for a more natural result. | free |
+| **`--method rnnoise --model sh`** (or `cb`) | Local RNNoise via ffmpeg `arnndn` (models in `tools/models/rnnoise/`) | Legacy fallback only; DeepFilterNet beat it on every test. Only PARTIALLY removes dynamic noise. | free |
 
 Proven on video-1 (shot outdoors with a stream): `afftdn` did ~nothing, RNNoise only partially darkened
 the water bed, **ElevenLabs removed it near-completely** (pauses to near-silence, voice + breaths intact).
-Rule of thumb: **stationary noise → try local first; dynamic broadband (water/wind/traffic) → ElevenLabs.**
+Measured 2026-09 (DeepFilterNet's own noisy sample + a JFK clip with added fan noise/hum): **DeepFilterNet
+took the gaps between words 32 to 37 dB lower with the voice level unchanged; RNNoise managed 19 dB on the
+first and gutted the voice itself on the second** (speech fell 24 dB). DeepFilterNet was not tested on
+running water yet: A/B it against ElevenLabs on video-1-style outdoor noise before trusting it there.
+Rule of thumb: **anything → try DeepFilterNet first; if dynamic broadband noise (water/wind/crowd) survives
+it, → ElevenLabs.**
 
 ## Inputs (read/measure first, every time)
 
@@ -77,7 +83,10 @@ Rule of thumb: **stationary noise → try local first; dynamic broadband (water/
 
 ## Tooling quick reference
 
-- Clean: `python tools/clean_voice.py IN.mp4 [--method eleven|rnnoise] [--model sh|cb] [-o OUT.mp4] [--no-preserve-loudness] [--keep]`
+- Clean: `python tools/clean_voice.py IN.mp4 [--method deepfilter|eleven|rnnoise] [--atten DB] [--model sh|cb] [-o OUT.mp4] [--no-preserve-loudness] [--keep]`
+- Level caveat: the RMS-match assumes the source is speech-dominated. On a very noisy source the noise inflates
+  the source RMS, so the cleaned voice gets boosted by the removed noise's share (peak-capped, never clips).
+  Check the printed `gain` line; if it's more than ~+6 dB, rerun with `--no-preserve-loudness` and let the final mix set loudness.
 - Diagnose: `ffmpeg -i M -vn -af astats -f null -` · `ffmpeg -i M -vn -lavfi showspectrumpic=... out.png` (then Read the png).
 - RNNoise models: `tools/models/rnnoise/<model>.rnnn` (`sh`, `cb`).
 - Scratch samples/spectrograms go in the scratchpad, not the project.
