@@ -1,0 +1,3984 @@
+{
+ "project": "beeplumb-01-blank-canvas",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "fps": 30,
+ "duration": 250.329,
+ "beats": {
+  "open": {
+   "start": 0.6,
+   "end": 24.253
+  },
+  "know": {
+   "start": 25.003,
+   "end": 56.54
+  },
+  "name": {
+   "start": 57.29,
+   "end": 103.135
+  },
+  "plan": {
+   "start": 103.885,
+   "end": 126.834
+  },
+  "ai": {
+   "start": 127.584,
+   "end": 181.547
+  },
+  "why": {
+   "start": 182.297,
+   "end": 210.005
+  },
+  "silly": {
+   "start": 210.755,
+   "end": 242.44
+  },
+  "out": {
+   "start": 243.19,
+   "end": 249.129
+  }
+ },
+ "lines": [
+  {
+   "id": "open-1",
+   "beat": "open",
+   "text": "All weekend, I went around and around, trying to figure out what this channel was going to be.",
+   "start": 0.6,
+   "end": 6.204,
+   "words": [
+    {
+     "w": "All",
+     "start": 0.6,
+     "end": 0.831
+    },
+    {
+     "w": "weekend,",
+     "start": 0.831,
+     "end": 1.524
+    },
+    {
+     "w": "I",
+     "start": 1.524,
+     "end": 1.698
+    },
+    {
+     "w": "went",
+     "start": 1.698,
+     "end": 1.987
+    },
+    {
+     "w": "around",
+     "start": 1.987,
+     "end": 2.391
+    },
+    {
+     "w": "and",
+     "start": 2.391,
+     "end": 2.564
+    },
+    {
+     "w": "around,",
+     "start": 2.564,
+     "end": 3.2
+    },
+    {
+     "w": "trying",
+     "start": 3.2,
+     "end": 3.604
+    },
+    {
+     "w": "to",
+     "start": 3.604,
+     "end": 3.778
+    },
+    {
+     "w": "figure",
+     "start": 3.778,
+     "end": 4.124
+    },
+    {
+     "w": "out",
+     "start": 4.124,
+     "end": 4.355
+    },
+    {
+     "w": "what",
+     "start": 4.355,
+     "end": 4.587
+    },
+    {
+     "w": "this",
+     "start": 4.587,
+     "end": 4.818
+    },
+    {
+     "w": "channel",
+     "start": 4.818,
+     "end": 5.222
+    },
+    {
+     "w": "was",
+     "start": 5.222,
+     "end": 5.395
+    },
+    {
+     "w": "going",
+     "start": 5.395,
+     "end": 5.742
+    },
+    {
+     "w": "to",
+     "start": 5.742,
+     "end": 5.915
+    },
+    {
+     "w": "be.",
+     "start": 5.915,
+     "end": 6.204
+    }
+   ]
+  },
+  {
+   "id": "open-2",
+   "beat": "open",
+   "text": "Do I use this handle? Do I chase this trend? Do I try to beat that guy?",
+   "start": 6.524,
+   "end": 11.229,
+   "words": [
+    {
+     "w": "Do",
+     "start": 6.524,
+     "end": 6.755
+    },
+    {
+     "w": "I",
+     "start": 6.755,
+     "end": 6.928
+    },
+    {
+     "w": "use",
+     "start": 6.928,
+     "end": 7.216
+    },
+    {
+     "w": "this",
+     "start": 7.216,
+     "end": 7.447
+    },
+    {
+     "w": "handle?",
+     "start": 7.447,
+     "end": 7.909
+    },
+    {
+     "w": "Do",
+     "start": 8.129,
+     "end": 8.358
+    },
+    {
+     "w": "I",
+     "start": 8.358,
+     "end": 8.53
+    },
+    {
+     "w": "chase",
+     "start": 8.53,
+     "end": 8.875
+    },
+    {
+     "w": "this",
+     "start": 8.875,
+     "end": 9.105
+    },
+    {
+     "w": "trend?",
+     "start": 9.105,
+     "end": 9.506
+    },
+    {
+     "w": "Do",
+     "start": 9.726,
+     "end": 9.934
+    },
+    {
+     "w": "I",
+     "start": 9.934,
+     "end": 10.089
+    },
+    {
+     "w": "try",
+     "start": 10.089,
+     "end": 10.348
+    },
+    {
+     "w": "to",
+     "start": 10.348,
+     "end": 10.504
+    },
+    {
+     "w": "beat",
+     "start": 10.504,
+     "end": 10.763
+    },
+    {
+     "w": "that",
+     "start": 10.763,
+     "end": 10.97
+    },
+    {
+     "w": "guy?",
+     "start": 10.97,
+     "end": 11.229
+    }
+   ]
+  },
+  {
+   "id": "open-3",
+   "beat": "open",
+   "text": "None of that is going to work. And here's why.",
+   "start": 11.549,
+   "end": 14.439,
+   "words": [
+    {
+     "w": "None",
+     "start": 11.549,
+     "end": 11.804
+    },
+    {
+     "w": "of",
+     "start": 11.804,
+     "end": 11.931
+    },
+    {
+     "w": "that",
+     "start": 11.931,
+     "end": 12.186
+    },
+    {
+     "w": "is",
+     "start": 12.186,
+     "end": 12.313
+    },
+    {
+     "w": "going",
+     "start": 12.313,
+     "end": 12.695
+    },
+    {
+     "w": "to",
+     "start": 12.695,
+     "end": 12.886
+    },
+    {
+     "w": "work.",
+     "start": 12.886,
+     "end": 13.268
+    },
+    {
+     "w": "And",
+     "start": 13.488,
+     "end": 13.708
+    },
+    {
+     "w": "here's",
+     "start": 13.708,
+     "end": 14.073
+    },
+    {
+     "w": "why.",
+     "start": 14.073,
+     "end": 14.439
+    }
+   ]
+  },
+  {
+   "id": "open-4",
+   "beat": "open",
+   "text": "Yes, I know. And here's why is a YouTube phrase. I'm doing it anyway.",
+   "start": 14.759,
+   "end": 19.386,
+   "words": [
+    {
+     "w": "Yes,",
+     "start": 14.759,
+     "end": 15.201
+    },
+    {
+     "w": "I",
+     "start": 15.201,
+     "end": 15.367
+    },
+    {
+     "w": "know.",
+     "start": 15.367,
+     "end": 15.644
+    },
+    {
+     "w": "And",
+     "start": 15.864,
+     "end": 16.04
+    },
+    {
+     "w": "here's",
+     "start": 16.04,
+     "end": 16.334
+    },
+    {
+     "w": "why",
+     "start": 16.334,
+     "end": 16.569
+    },
+    {
+     "w": "is",
+     "start": 16.569,
+     "end": 16.686
+    },
+    {
+     "w": "a",
+     "start": 16.686,
+     "end": 16.862
+    },
+    {
+     "w": "YouTube",
+     "start": 16.862,
+     "end": 17.391
+    },
+    {
+     "w": "phrase.",
+     "start": 17.391,
+     "end": 17.802
+    },
+    {
+     "w": "I'm",
+     "start": 18.022,
+     "end": 18.227
+    },
+    {
+     "w": "doing",
+     "start": 18.227,
+     "end": 18.636
+    },
+    {
+     "w": "it",
+     "start": 18.636,
+     "end": 18.772
+    },
+    {
+     "w": "anyway.",
+     "start": 18.772,
+     "end": 19.386
+    }
+   ]
+  },
+  {
+   "id": "open-5",
+   "beat": "open",
+   "text": "None of it works, because I don't know what I want to do yet. I haven't done it.",
+   "start": 19.706,
+   "end": 24.253,
+   "words": [
+    {
+     "w": "None",
+     "start": 19.706,
+     "end": 19.924
+    },
+    {
+     "w": "of",
+     "start": 19.924,
+     "end": 20.033
+    },
+    {
+     "w": "it",
+     "start": 20.033,
+     "end": 20.141
+    },
+    {
+     "w": "works,",
+     "start": 20.141,
+     "end": 20.686
+    },
+    {
+     "w": "because",
+     "start": 20.686,
+     "end": 21.012
+    },
+    {
+     "w": "I",
+     "start": 21.012,
+     "end": 21.176
+    },
+    {
+     "w": "don't",
+     "start": 21.176,
+     "end": 21.502
+    },
+    {
+     "w": "know",
+     "start": 21.502,
+     "end": 21.72
+    },
+    {
+     "w": "what",
+     "start": 21.72,
+     "end": 21.938
+    },
+    {
+     "w": "I",
+     "start": 21.938,
+     "end": 22.101
+    },
+    {
+     "w": "want",
+     "start": 22.101,
+     "end": 22.373
+    },
+    {
+     "w": "to",
+     "start": 22.373,
+     "end": 22.537
+    },
+    {
+     "w": "do",
+     "start": 22.537,
+     "end": 22.754
+    },
+    {
+     "w": "yet.",
+     "start": 22.754,
+     "end": 23.027
+    },
+    {
+     "w": "I",
+     "start": 23.247,
+     "end": 23.424
+    },
+    {
+     "w": "haven't",
+     "start": 23.424,
+     "end": 23.839
+    },
+    {
+     "w": "done",
+     "start": 23.839,
+     "end": 24.076
+    },
+    {
+     "w": "it.",
+     "start": 24.076,
+     "end": 24.253
+    }
+   ]
+  },
+  {
+   "id": "know-1",
+   "beat": "know",
+   "text": "Here's what I do know.",
+   "start": 25.003,
+   "end": 26.276,
+   "words": [
+    {
+     "w": "Here's",
+     "start": 25.003,
+     "end": 25.306
+    },
+    {
+     "w": "what",
+     "start": 25.306,
+     "end": 25.548
+    },
+    {
+     "w": "I",
+     "start": 25.548,
+     "end": 25.73
+    },
+    {
+     "w": "do",
+     "start": 25.73,
+     "end": 25.972
+    },
+    {
+     "w": "know.",
+     "start": 25.972,
+     "end": 26.275
+    }
+   ]
+  },
+  {
+   "id": "know-2",
+   "beat": "know",
+   "text": "I want to explore. I want to express myself. And I want to show you what I'm learning, so if you're into this stuff, you can learn from my example.",
+   "start": 26.596,
+   "end": 35.53,
+   "words": [
+    {
+     "w": "I",
+     "start": 26.596,
+     "end": 26.76
+    },
+    {
+     "w": "want",
+     "start": 26.76,
+     "end": 27.033
+    },
+    {
+     "w": "to",
+     "start": 27.033,
+     "end": 27.197
+    },
+    {
+     "w": "explore.",
+     "start": 27.197,
+     "end": 27.744
+    },
+    {
+     "w": "I",
+     "start": 27.964,
+     "end": 28.128
+    },
+    {
+     "w": "want",
+     "start": 28.128,
+     "end": 28.4
+    },
+    {
+     "w": "to",
+     "start": 28.4,
+     "end": 28.564
+    },
+    {
+     "w": "express",
+     "start": 28.564,
+     "end": 29.001
+    },
+    {
+     "w": "myself.",
+     "start": 29.001,
+     "end": 29.492
+    },
+    {
+     "w": "And",
+     "start": 29.712,
+     "end": 29.894
+    },
+    {
+     "w": "I",
+     "start": 29.894,
+     "end": 30.075
+    },
+    {
+     "w": "want",
+     "start": 30.075,
+     "end": 30.379
+    },
+    {
+     "w": "to",
+     "start": 30.379,
+     "end": 30.56
+    },
+    {
+     "w": "show",
+     "start": 30.56,
+     "end": 30.803
+    },
+    {
+     "w": "you",
+     "start": 30.803,
+     "end": 30.985
+    },
+    {
+     "w": "what",
+     "start": 30.985,
+     "end": 31.227
+    },
+    {
+     "w": "I'm",
+     "start": 31.227,
+     "end": 31.409
+    },
+    {
+     "w": "learning,",
+     "start": 31.409,
+     "end": 32.076
+    },
+    {
+     "w": "so",
+     "start": 32.076,
+     "end": 32.318
+    },
+    {
+     "w": "if",
+     "start": 32.318,
+     "end": 32.439
+    },
+    {
+     "w": "you're",
+     "start": 32.439,
+     "end": 32.621
+    },
+    {
+     "w": "into",
+     "start": 32.621,
+     "end": 32.924
+    },
+    {
+     "w": "this",
+     "start": 32.924,
+     "end": 33.167
+    },
+    {
+     "w": "stuff,",
+     "start": 33.167,
+     "end": 33.712
+    },
+    {
+     "w": "you",
+     "start": 33.712,
+     "end": 33.894
+    },
+    {
+     "w": "can",
+     "start": 33.894,
+     "end": 34.136
+    },
+    {
+     "w": "learn",
+     "start": 34.136,
+     "end": 34.439
+    },
+    {
+     "w": "from",
+     "start": 34.439,
+     "end": 34.682
+    },
+    {
+     "w": "my",
+     "start": 34.682,
+     "end": 34.924
+    },
+    {
+     "w": "example.",
+     "start": 34.924,
+     "end": 35.53
+    }
+   ]
+  },
+  {
+   "id": "know-3",
+   "beat": "know",
+   "text": "You. Not an audience. Not you guys. You.",
+   "start": 35.85,
+   "end": 39.576,
+   "words": [
+    {
+     "w": "You.",
+     "start": 35.85,
+     "end": 36.308
+    },
+    {
+     "w": "Not",
+     "start": 36.528,
+     "end": 36.873
+    },
+    {
+     "w": "an",
+     "start": 36.873,
+     "end": 37.012
+    },
+    {
+     "w": "audience.",
+     "start": 37.012,
+     "end": 37.634
+    },
+    {
+     "w": "Not",
+     "start": 37.854,
+     "end": 38.227
+    },
+    {
+     "w": "you",
+     "start": 38.227,
+     "end": 38.451
+    },
+    {
+     "w": "guys.",
+     "start": 38.451,
+     "end": 38.898
+    },
+    {
+     "w": "You.",
+     "start": 39.118,
+     "end": 39.576
+    }
+   ]
+  },
+  {
+   "id": "know-4",
+   "beat": "know",
+   "text": "Because let's be honest about how you got here. An algorithm put a thumbnail in front of you. You gave it a few seconds. And right now, you're deciding if I'm worth it, over literally everything else on the internet.",
+   "start": 39.896,
+   "end": 52.314,
+   "words": [
+    {
+     "w": "Because",
+     "start": 39.896,
+     "end": 40.216
+    },
+    {
+     "w": "let's",
+     "start": 40.216,
+     "end": 40.483
+    },
+    {
+     "w": "be",
+     "start": 40.483,
+     "end": 40.697
+    },
+    {
+     "w": "honest",
+     "start": 40.697,
+     "end": 41.071
+    },
+    {
+     "w": "about",
+     "start": 41.071,
+     "end": 41.391
+    },
+    {
+     "w": "how",
+     "start": 41.391,
+     "end": 41.604
+    },
+    {
+     "w": "you",
+     "start": 41.604,
+     "end": 41.765
+    },
+    {
+     "w": "got",
+     "start": 41.765,
+     "end": 42.032
+    },
+    {
+     "w": "here.",
+     "start": 42.032,
+     "end": 42.298
+    },
+    {
+     "w": "An",
+     "start": 42.518,
+     "end": 42.631
+    },
+    {
+     "w": "algorithm",
+     "start": 42.631,
+     "end": 43.247
+    },
+    {
+     "w": "put",
+     "start": 43.247,
+     "end": 43.472
+    },
+    {
+     "w": "a",
+     "start": 43.472,
+     "end": 43.64
+    },
+    {
+     "w": "thumbnail",
+     "start": 43.64,
+     "end": 44.089
+    },
+    {
+     "w": "in",
+     "start": 44.089,
+     "end": 44.257
+    },
+    {
+     "w": "front",
+     "start": 44.257,
+     "end": 44.593
+    },
+    {
+     "w": "of",
+     "start": 44.593,
+     "end": 44.706
+    },
+    {
+     "w": "you.",
+     "start": 44.706,
+     "end": 44.93
+    },
+    {
+     "w": "You",
+     "start": 45.15,
+     "end": 45.305
+    },
+    {
+     "w": "gave",
+     "start": 45.305,
+     "end": 45.564
+    },
+    {
+     "w": "it",
+     "start": 45.564,
+     "end": 45.667
+    },
+    {
+     "w": "a",
+     "start": 45.667,
+     "end": 45.823
+    },
+    {
+     "w": "few",
+     "start": 45.823,
+     "end": 46.081
+    },
+    {
+     "w": "seconds.",
+     "start": 46.081,
+     "end": 46.547
+    },
+    {
+     "w": "And",
+     "start": 46.767,
+     "end": 46.96
+    },
+    {
+     "w": "right",
+     "start": 46.96,
+     "end": 47.283
+    },
+    {
+     "w": "now,",
+     "start": 47.283,
+     "end": 47.799
+    },
+    {
+     "w": "you're",
+     "start": 47.799,
+     "end": 47.992
+    },
+    {
+     "w": "deciding",
+     "start": 47.992,
+     "end": 48.573
+    },
+    {
+     "w": "if",
+     "start": 48.573,
+     "end": 48.702
+    },
+    {
+     "w": "I'm",
+     "start": 48.702,
+     "end": 48.895
+    },
+    {
+     "w": "worth",
+     "start": 48.895,
+     "end": 49.218
+    },
+    {
+     "w": "it,",
+     "start": 49.218,
+     "end": 49.605
+    },
+    {
+     "w": "over",
+     "start": 49.605,
+     "end": 49.927
+    },
+    {
+     "w": "literally",
+     "start": 49.927,
+     "end": 50.508
+    },
+    {
+     "w": "everything",
+     "start": 50.508,
+     "end": 51.088
+    },
+    {
+     "w": "else",
+     "start": 51.088,
+     "end": 51.346
+    },
+    {
+     "w": "on",
+     "start": 51.346,
+     "end": 51.539
+    },
+    {
+     "w": "the",
+     "start": 51.539,
+     "end": 51.668
+    },
+    {
+     "w": "internet.",
+     "start": 51.668,
+     "end": 52.313
+    }
+   ]
+  },
+  {
+   "id": "know-5",
+   "beat": "know",
+   "text": "That's not me being important. That's me being lucky. Hi.",
+   "start": 52.634,
+   "end": 56.54,
+   "words": [
+    {
+     "w": "That's",
+     "start": 52.634,
+     "end": 52.901
+    },
+    {
+     "w": "not",
+     "start": 52.901,
+     "end": 53.168
+    },
+    {
+     "w": "me",
+     "start": 53.168,
+     "end": 53.381
+    },
+    {
+     "w": "being",
+     "start": 53.381,
+     "end": 53.702
+    },
+    {
+     "w": "important.",
+     "start": 53.702,
+     "end": 54.342
+    },
+    {
+     "w": "That's",
+     "start": 54.562,
+     "end": 54.858
+    },
+    {
+     "w": "me",
+     "start": 54.858,
+     "end": 55.094
+    },
+    {
+     "w": "being",
+     "start": 55.094,
+     "end": 55.449
+    },
+    {
+     "w": "lucky.",
+     "start": 55.449,
+     "end": 55.803
+    },
+    {
+     "w": "Hi.",
+     "start": 56.023,
+     "end": 56.54
+    }
+   ]
+  },
+  {
+   "id": "name-1",
+   "beat": "name",
+   "text": "So after circling the drain on this for days, if not weeks, I picked a name. Beeplumb.",
+   "start": 57.29,
+   "end": 63.072,
+   "words": [
+    {
+     "w": "So",
+     "start": 57.29,
+     "end": 57.534
+    },
+    {
+     "w": "after",
+     "start": 57.534,
+     "end": 57.839
+    },
+    {
+     "w": "circling",
+     "start": 57.839,
+     "end": 58.328
+    },
+    {
+     "w": "the",
+     "start": 58.328,
+     "end": 58.45
+    },
+    {
+     "w": "drain",
+     "start": 58.45,
+     "end": 58.816
+    },
+    {
+     "w": "on",
+     "start": 58.816,
+     "end": 58.999
+    },
+    {
+     "w": "this",
+     "start": 58.999,
+     "end": 59.244
+    },
+    {
+     "w": "for",
+     "start": 59.244,
+     "end": 59.488
+    },
+    {
+     "w": "days,",
+     "start": 59.488,
+     "end": 60.037
+    },
+    {
+     "w": "if",
+     "start": 60.037,
+     "end": 60.159
+    },
+    {
+     "w": "not",
+     "start": 60.159,
+     "end": 60.464
+    },
+    {
+     "w": "weeks,",
+     "start": 60.464,
+     "end": 61.075
+    },
+    {
+     "w": "I",
+     "start": 61.075,
+     "end": 61.258
+    },
+    {
+     "w": "picked",
+     "start": 61.258,
+     "end": 61.563
+    },
+    {
+     "w": "a",
+     "start": 61.563,
+     "end": 61.746
+    },
+    {
+     "w": "name.",
+     "start": 61.746,
+     "end": 62.113
+    },
+    {
+     "w": "Beeplumb.",
+     "start": 62.333,
+     "end": 63.072
+    }
+   ]
+  },
+  {
+   "id": "name-2",
+   "beat": "name",
+   "text": "A bee is a gathering where somebody comes out on top. To plumb is to measure a thing against true.",
+   "start": 63.392,
+   "end": 69.369,
+   "words": [
+    {
+     "w": "A",
+     "start": 63.392,
+     "end": 63.586
+    },
+    {
+     "w": "bee",
+     "start": 63.586,
+     "end": 63.845
+    },
+    {
+     "w": "is",
+     "start": 63.845,
+     "end": 63.974
+    },
+    {
+     "w": "a",
+     "start": 63.974,
+     "end": 64.168
+    },
+    {
+     "w": "gathering",
+     "start": 64.168,
+     "end": 64.686
+    },
+    {
+     "w": "where",
+     "start": 64.686,
+     "end": 64.944
+    },
+    {
+     "w": "somebody",
+     "start": 64.944,
+     "end": 65.527
+    },
+    {
+     "w": "comes",
+     "start": 65.527,
+     "end": 65.85
+    },
+    {
+     "w": "out",
+     "start": 65.85,
+     "end": 66.109
+    },
+    {
+     "w": "on",
+     "start": 66.109,
+     "end": 66.303
+    },
+    {
+     "w": "top.",
+     "start": 66.303,
+     "end": 66.691
+    },
+    {
+     "w": "To",
+     "start": 66.911,
+     "end": 67.105
+    },
+    {
+     "w": "plumb",
+     "start": 67.105,
+     "end": 67.428
+    },
+    {
+     "w": "is",
+     "start": 67.428,
+     "end": 67.558
+    },
+    {
+     "w": "to",
+     "start": 67.558,
+     "end": 67.752
+    },
+    {
+     "w": "measure",
+     "start": 67.752,
+     "end": 68.075
+    },
+    {
+     "w": "a",
+     "start": 68.075,
+     "end": 68.269
+    },
+    {
+     "w": "thing",
+     "start": 68.269,
+     "end": 68.528
+    },
+    {
+     "w": "against",
+     "start": 68.528,
+     "end": 68.981
+    },
+    {
+     "w": "true.",
+     "start": 68.981,
+     "end": 69.369
+    }
+   ]
+  },
+  {
+   "id": "name-3",
+   "beat": "name",
+   "text": "Also, it's a plum. That is also a bee. Say hi to the mascot.",
+   "start": 69.689,
+   "end": 74.052,
+   "words": [
+    {
+     "w": "Also,",
+     "start": 69.689,
+     "end": 70.276
+    },
+    {
+     "w": "it's",
+     "start": 70.276,
+     "end": 70.435
+    },
+    {
+     "w": "a",
+     "start": 70.435,
+     "end": 70.595
+    },
+    {
+     "w": "plum.",
+     "start": 70.595,
+     "end": 70.915
+    },
+    {
+     "w": "That",
+     "start": 71.135,
+     "end": 71.375
+    },
+    {
+     "w": "is",
+     "start": 71.375,
+     "end": 71.494
+    },
+    {
+     "w": "also",
+     "start": 71.494,
+     "end": 71.913
+    },
+    {
+     "w": "a",
+     "start": 71.913,
+     "end": 72.092
+    },
+    {
+     "w": "bee.",
+     "start": 72.092,
+     "end": 72.391
+    },
+    {
+     "w": "Say",
+     "start": 72.611,
+     "end": 72.873
+    },
+    {
+     "w": "hi",
+     "start": 72.873,
+     "end": 73.135
+    },
+    {
+     "w": "to",
+     "start": 73.135,
+     "end": 73.332
+    },
+    {
+     "w": "the",
+     "start": 73.332,
+     "end": 73.463
+    },
+    {
+     "w": "mascot.",
+     "start": 73.463,
+     "end": 74.052
+    }
+   ]
+  },
+  {
+   "id": "name-4",
+   "beat": "name",
+   "text": "Why not a persona? Why not bring over my Instagram, where I had seventy seven thousand followers under a different name?",
+   "start": 74.372,
+   "end": 81.882,
+   "words": [
+    {
+     "w": "Why",
+     "start": 74.372,
+     "end": 74.595
+    },
+    {
+     "w": "not",
+     "start": 74.595,
+     "end": 74.874
+    },
+    {
+     "w": "a",
+     "start": 74.874,
+     "end": 75.041
+    },
+    {
+     "w": "persona?",
+     "start": 75.041,
+     "end": 75.599
+    },
+    {
+     "w": "Why",
+     "start": 75.819,
+     "end": 76.057
+    },
+    {
+     "w": "not",
+     "start": 76.057,
+     "end": 76.354
+    },
+    {
+     "w": "bring",
+     "start": 76.354,
+     "end": 76.651
+    },
+    {
+     "w": "over",
+     "start": 76.651,
+     "end": 76.948
+    },
+    {
+     "w": "my",
+     "start": 76.948,
+     "end": 77.186
+    },
+    {
+     "w": "Instagram,",
+     "start": 77.186,
+     "end": 78.078
+    },
+    {
+     "w": "where",
+     "start": 78.078,
+     "end": 78.316
+    },
+    {
+     "w": "I",
+     "start": 78.316,
+     "end": 78.494
+    },
+    {
+     "w": "had",
+     "start": 78.494,
+     "end": 78.732
+    },
+    {
+     "w": "seventy",
+     "start": 78.732,
+     "end": 79.208
+    },
+    {
+     "w": "seven",
+     "start": 79.208,
+     "end": 79.564
+    },
+    {
+     "w": "thousand",
+     "start": 79.564,
+     "end": 80.04
+    },
+    {
+     "w": "followers",
+     "start": 80.04,
+     "end": 80.575
+    },
+    {
+     "w": "under",
+     "start": 80.575,
+     "end": 80.872
+    },
+    {
+     "w": "a",
+     "start": 80.872,
+     "end": 81.05
+    },
+    {
+     "w": "different",
+     "start": 81.05,
+     "end": 81.526
+    },
+    {
+     "w": "name?",
+     "start": 81.526,
+     "end": 81.883
+    }
+   ]
+  },
+  {
+   "id": "name-5",
+   "beat": "name",
+   "text": "Because I want a fresh start.",
+   "start": 82.202,
+   "end": 83.685,
+   "words": [
+    {
+     "w": "Because",
+     "start": 82.202,
+     "end": 82.498
+    },
+    {
+     "w": "I",
+     "start": 82.498,
+     "end": 82.647
+    },
+    {
+     "w": "want",
+     "start": 82.647,
+     "end": 82.894
+    },
+    {
+     "w": "a",
+     "start": 82.894,
+     "end": 83.042
+    },
+    {
+     "w": "fresh",
+     "start": 83.042,
+     "end": 83.289
+    },
+    {
+     "w": "start.",
+     "start": 83.289,
+     "end": 83.684
+    }
+   ]
+  },
+  {
+   "id": "name-6",
+   "beat": "name",
+   "text": "Give a painter a blank canvas, and that's a wonderful experience. Give them a canvas that's already covered in paint, and sure, they can still have a great time. But the blank one is better.",
+   "start": 84.005,
+   "end": 95.403,
+   "words": [
+    {
+     "w": "Give",
+     "start": 84.005,
+     "end": 84.241
+    },
+    {
+     "w": "a",
+     "start": 84.241,
+     "end": 84.418
+    },
+    {
+     "w": "painter",
+     "start": 84.418,
+     "end": 84.832
+    },
+    {
+     "w": "a",
+     "start": 84.832,
+     "end": 85.009
+    },
+    {
+     "w": "blank",
+     "start": 85.009,
+     "end": 85.363
+    },
+    {
+     "w": "canvas,",
+     "start": 85.363,
+     "end": 86.013
+    },
+    {
+     "w": "and",
+     "start": 86.013,
+     "end": 86.19
+    },
+    {
+     "w": "that's",
+     "start": 86.19,
+     "end": 86.485
+    },
+    {
+     "w": "a",
+     "start": 86.485,
+     "end": 86.663
+    },
+    {
+     "w": "wonderful",
+     "start": 86.663,
+     "end": 87.194
+    },
+    {
+     "w": "experience.",
+     "start": 87.194,
+     "end": 87.962
+    },
+    {
+     "w": "Give",
+     "start": 88.182,
+     "end": 88.424
+    },
+    {
+     "w": "them",
+     "start": 88.424,
+     "end": 88.667
+    },
+    {
+     "w": "a",
+     "start": 88.667,
+     "end": 88.848
+    },
+    {
+     "w": "canvas",
+     "start": 88.848,
+     "end": 89.273
+    },
+    {
+     "w": "that's",
+     "start": 89.273,
+     "end": 89.576
+    },
+    {
+     "w": "already",
+     "start": 89.576,
+     "end": 90.06
+    },
+    {
+     "w": "covered",
+     "start": 90.06,
+     "end": 90.424
+    },
+    {
+     "w": "in",
+     "start": 90.424,
+     "end": 90.606
+    },
+    {
+     "w": "paint,",
+     "start": 90.606,
+     "end": 91.212
+    },
+    {
+     "w": "and",
+     "start": 91.212,
+     "end": 91.394
+    },
+    {
+     "w": "sure,",
+     "start": 91.394,
+     "end": 91.879
+    },
+    {
+     "w": "they",
+     "start": 91.879,
+     "end": 92.06
+    },
+    {
+     "w": "can",
+     "start": 92.06,
+     "end": 92.303
+    },
+    {
+     "w": "still",
+     "start": 92.303,
+     "end": 92.606
+    },
+    {
+     "w": "have",
+     "start": 92.606,
+     "end": 92.848
+    },
+    {
+     "w": "a",
+     "start": 92.848,
+     "end": 93.03
+    },
+    {
+     "w": "great",
+     "start": 93.03,
+     "end": 93.394
+    },
+    {
+     "w": "time.",
+     "start": 93.394,
+     "end": 93.757
+    },
+    {
+     "w": "But",
+     "start": 93.977,
+     "end": 94.215
+    },
+    {
+     "w": "the",
+     "start": 94.215,
+     "end": 94.334
+    },
+    {
+     "w": "blank",
+     "start": 94.334,
+     "end": 94.69
+    },
+    {
+     "w": "one",
+     "start": 94.69,
+     "end": 94.928
+    },
+    {
+     "w": "is",
+     "start": 94.928,
+     "end": 95.047
+    },
+    {
+     "w": "better.",
+     "start": 95.047,
+     "end": 95.403
+    }
+   ]
+  },
+  {
+   "id": "name-7",
+   "beat": "name",
+   "text": "And there's nothing wrong with the people who followed me over there. Other than the fact that they decided following me was a good idea.",
+   "start": 95.723,
+   "end": 103.135,
+   "words": [
+    {
+     "w": "And",
+     "start": 95.723,
+     "end": 95.896
+    },
+    {
+     "w": "there's",
+     "start": 95.896,
+     "end": 96.185
+    },
+    {
+     "w": "nothing",
+     "start": 96.185,
+     "end": 96.531
+    },
+    {
+     "w": "wrong",
+     "start": 96.531,
+     "end": 96.761
+    },
+    {
+     "w": "with",
+     "start": 96.761,
+     "end": 96.935
+    },
+    {
+     "w": "the",
+     "start": 96.935,
+     "end": 97.05
+    },
+    {
+     "w": "people",
+     "start": 97.05,
+     "end": 97.454
+    },
+    {
+     "w": "who",
+     "start": 97.454,
+     "end": 97.685
+    },
+    {
+     "w": "followed",
+     "start": 97.685,
+     "end": 98.146
+    },
+    {
+     "w": "me",
+     "start": 98.146,
+     "end": 98.377
+    },
+    {
+     "w": "over",
+     "start": 98.377,
+     "end": 98.665
+    },
+    {
+     "w": "there.",
+     "start": 98.665,
+     "end": 98.954
+    },
+    {
+     "w": "Other",
+     "start": 99.174,
+     "end": 99.438
+    },
+    {
+     "w": "than",
+     "start": 99.438,
+     "end": 99.636
+    },
+    {
+     "w": "the",
+     "start": 99.636,
+     "end": 99.768
+    },
+    {
+     "w": "fact",
+     "start": 99.768,
+     "end": 100.098
+    },
+    {
+     "w": "that",
+     "start": 100.098,
+     "end": 100.362
+    },
+    {
+     "w": "they",
+     "start": 100.362,
+     "end": 100.56
+    },
+    {
+     "w": "decided",
+     "start": 100.56,
+     "end": 101.154
+    },
+    {
+     "w": "following",
+     "start": 101.154,
+     "end": 101.749
+    },
+    {
+     "w": "me",
+     "start": 101.749,
+     "end": 102.013
+    },
+    {
+     "w": "was",
+     "start": 102.013,
+     "end": 102.211
+    },
+    {
+     "w": "a",
+     "start": 102.211,
+     "end": 102.409
+    },
+    {
+     "w": "good",
+     "start": 102.409,
+     "end": 102.673
+    },
+    {
+     "w": "idea.",
+     "start": 102.673,
+     "end": 103.135
+    }
+   ]
+  },
+  {
+   "id": "plan-1",
+   "beat": "plan",
+   "text": "So here's the plan. I'm building a game. A silly little game.",
+   "start": 103.885,
+   "end": 107.877,
+   "words": [
+    {
+     "w": "So",
+     "start": 103.885,
+     "end": 104.17
+    },
+    {
+     "w": "here's",
+     "start": 104.17,
+     "end": 104.526
+    },
+    {
+     "w": "the",
+     "start": 104.526,
+     "end": 104.668
+    },
+    {
+     "w": "plan.",
+     "start": 104.668,
+     "end": 105.095
+    },
+    {
+     "w": "I'm",
+     "start": 105.315,
+     "end": 105.498
+    },
+    {
+     "w": "building",
+     "start": 105.498,
+     "end": 105.926
+    },
+    {
+     "w": "a",
+     "start": 105.926,
+     "end": 106.109
+    },
+    {
+     "w": "game.",
+     "start": 106.109,
+     "end": 106.476
+    },
+    {
+     "w": "A",
+     "start": 106.696,
+     "end": 106.873
+    },
+    {
+     "w": "silly",
+     "start": 106.873,
+     "end": 107.168
+    },
+    {
+     "w": "little",
+     "start": 107.168,
+     "end": 107.523
+    },
+    {
+     "w": "game.",
+     "start": 107.523,
+     "end": 107.878
+    }
+   ]
+  },
+  {
+   "id": "plan-2",
+   "beat": "plan",
+   "text": "I'm going to document the whole thing. What I learned, what went well, and what absolutely did not.",
+   "start": 108.197,
+   "end": 113.89,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 108.197,
+     "end": 108.362
+    },
+    {
+     "w": "going",
+     "start": 108.362,
+     "end": 108.691
+    },
+    {
+     "w": "to",
+     "start": 108.691,
+     "end": 108.856
+    },
+    {
+     "w": "document",
+     "start": 108.856,
+     "end": 109.515
+    },
+    {
+     "w": "the",
+     "start": 109.515,
+     "end": 109.625
+    },
+    {
+     "w": "whole",
+     "start": 109.625,
+     "end": 109.9
+    },
+    {
+     "w": "thing.",
+     "start": 109.9,
+     "end": 110.175
+    },
+    {
+     "w": "What",
+     "start": 110.395,
+     "end": 110.616
+    },
+    {
+     "w": "I",
+     "start": 110.616,
+     "end": 110.783
+    },
+    {
+     "w": "learned,",
+     "start": 110.783,
+     "end": 111.338
+    },
+    {
+     "w": "what",
+     "start": 111.338,
+     "end": 111.56
+    },
+    {
+     "w": "went",
+     "start": 111.56,
+     "end": 111.837
+    },
+    {
+     "w": "well,",
+     "start": 111.837,
+     "end": 112.281
+    },
+    {
+     "w": "and",
+     "start": 112.281,
+     "end": 112.447
+    },
+    {
+     "w": "what",
+     "start": 112.447,
+     "end": 112.669
+    },
+    {
+     "w": "absolutely",
+     "start": 112.669,
+     "end": 113.335
+    },
+    {
+     "w": "did",
+     "start": 113.335,
+     "end": 113.557
+    },
+    {
+     "w": "not.",
+     "start": 113.557,
+     "end": 113.89
+    }
+   ]
+  },
+  {
+   "id": "plan-3",
+   "beat": "plan",
+   "text": "Some current events, too. We all breathe the same air and drink the same water. This stuff affects all of us.",
+   "start": 114.21,
+   "end": 120.857,
+   "words": [
+    {
+     "w": "Some",
+     "start": 114.21,
+     "end": 114.418
+    },
+    {
+     "w": "current",
+     "start": 114.418,
+     "end": 114.834
+    },
+    {
+     "w": "events,",
+     "start": 114.834,
+     "end": 115.406
+    },
+    {
+     "w": "too.",
+     "start": 115.406,
+     "end": 115.666
+    },
+    {
+     "w": "We",
+     "start": 115.886,
+     "end": 116.093
+    },
+    {
+     "w": "all",
+     "start": 116.093,
+     "end": 116.37
+    },
+    {
+     "w": "breathe",
+     "start": 116.37,
+     "end": 116.784
+    },
+    {
+     "w": "the",
+     "start": 116.784,
+     "end": 116.922
+    },
+    {
+     "w": "same",
+     "start": 116.922,
+     "end": 117.268
+    },
+    {
+     "w": "air",
+     "start": 117.268,
+     "end": 117.475
+    },
+    {
+     "w": "and",
+     "start": 117.475,
+     "end": 117.682
+    },
+    {
+     "w": "drink",
+     "start": 117.682,
+     "end": 118.096
+    },
+    {
+     "w": "the",
+     "start": 118.096,
+     "end": 118.234
+    },
+    {
+     "w": "same",
+     "start": 118.234,
+     "end": 118.58
+    },
+    {
+     "w": "water.",
+     "start": 118.58,
+     "end": 119.063
+    },
+    {
+     "w": "This",
+     "start": 119.283,
+     "end": 119.525
+    },
+    {
+     "w": "stuff",
+     "start": 119.525,
+     "end": 119.828
+    },
+    {
+     "w": "affects",
+     "start": 119.828,
+     "end": 120.252
+    },
+    {
+     "w": "all",
+     "start": 120.252,
+     "end": 120.494
+    },
+    {
+     "w": "of",
+     "start": 120.494,
+     "end": 120.615
+    },
+    {
+     "w": "us.",
+     "start": 120.615,
+     "end": 120.857
+    }
+   ]
+  },
+  {
+   "id": "plan-4",
+   "beat": "plan",
+   "text": "I'll open a silly little store. And I'll make videos about whatever I'm curious about that day.",
+   "start": 121.177,
+   "end": 126.834,
+   "words": [
+    {
+     "w": "I'll",
+     "start": 121.177,
+     "end": 121.355
+    },
+    {
+     "w": "open",
+     "start": 121.355,
+     "end": 121.71
+    },
+    {
+     "w": "a",
+     "start": 121.71,
+     "end": 121.888
+    },
+    {
+     "w": "silly",
+     "start": 121.888,
+     "end": 122.184
+    },
+    {
+     "w": "little",
+     "start": 122.184,
+     "end": 122.54
+    },
+    {
+     "w": "store.",
+     "start": 122.54,
+     "end": 122.955
+    },
+    {
+     "w": "And",
+     "start": 123.175,
+     "end": 123.361
+    },
+    {
+     "w": "I'll",
+     "start": 123.361,
+     "end": 123.547
+    },
+    {
+     "w": "make",
+     "start": 123.547,
+     "end": 123.857
+    },
+    {
+     "w": "videos",
+     "start": 123.857,
+     "end": 124.353
+    },
+    {
+     "w": "about",
+     "start": 124.353,
+     "end": 124.725
+    },
+    {
+     "w": "whatever",
+     "start": 124.725,
+     "end": 125.16
+    },
+    {
+     "w": "I'm",
+     "start": 125.16,
+     "end": 125.346
+    },
+    {
+     "w": "curious",
+     "start": 125.346,
+     "end": 125.904
+    },
+    {
+     "w": "about",
+     "start": 125.904,
+     "end": 126.276
+    },
+    {
+     "w": "that",
+     "start": 126.276,
+     "end": 126.524
+    },
+    {
+     "w": "day.",
+     "start": 126.524,
+     "end": 126.834
+    }
+   ]
+  },
+  {
+   "id": "ai-1",
+   "beat": "ai",
+   "text": "And yes. I'm going to use AI. A lot of it.",
+   "start": 127.584,
+   "end": 131.025,
+   "words": [
+    {
+     "w": "And",
+     "start": 127.584,
+     "end": 127.829
+    },
+    {
+     "w": "yes.",
+     "start": 127.829,
+     "end": 128.237
+    },
+    {
+     "w": "I'm",
+     "start": 128.457,
+     "end": 128.644
+    },
+    {
+     "w": "going",
+     "start": 128.644,
+     "end": 129.018
+    },
+    {
+     "w": "to",
+     "start": 129.018,
+     "end": 129.205
+    },
+    {
+     "w": "use",
+     "start": 129.205,
+     "end": 129.517
+    },
+    {
+     "w": "AI.",
+     "start": 129.517,
+     "end": 129.953
+    },
+    {
+     "w": "A",
+     "start": 130.173,
+     "end": 130.37
+    },
+    {
+     "w": "lot",
+     "start": 130.37,
+     "end": 130.697
+    },
+    {
+     "w": "of",
+     "start": 130.697,
+     "end": 130.828
+    },
+    {
+     "w": "it.",
+     "start": 130.828,
+     "end": 131.024
+    }
+   ]
+  },
+  {
+   "id": "ai-2",
+   "beat": "ai",
+   "text": "I know those two letters are enough to rile some people up. But it's here, and it's not going anywhere.",
+   "start": 131.345,
+   "end": 136.917,
+   "words": [
+    {
+     "w": "I",
+     "start": 131.345,
+     "end": 131.52
+    },
+    {
+     "w": "know",
+     "start": 131.52,
+     "end": 131.753
+    },
+    {
+     "w": "those",
+     "start": 131.753,
+     "end": 132.044
+    },
+    {
+     "w": "two",
+     "start": 132.044,
+     "end": 132.277
+    },
+    {
+     "w": "letters",
+     "start": 132.277,
+     "end": 132.627
+    },
+    {
+     "w": "are",
+     "start": 132.627,
+     "end": 132.801
+    },
+    {
+     "w": "enough",
+     "start": 132.801,
+     "end": 133.093
+    },
+    {
+     "w": "to",
+     "start": 133.093,
+     "end": 133.267
+    },
+    {
+     "w": "rile",
+     "start": 133.267,
+     "end": 133.559
+    },
+    {
+     "w": "some",
+     "start": 133.559,
+     "end": 133.792
+    },
+    {
+     "w": "people",
+     "start": 133.792,
+     "end": 134.199
+    },
+    {
+     "w": "up.",
+     "start": 134.199,
+     "end": 134.432
+    },
+    {
+     "w": "But",
+     "start": 134.653,
+     "end": 134.873
+    },
+    {
+     "w": "it's",
+     "start": 134.873,
+     "end": 135.039
+    },
+    {
+     "w": "here,",
+     "start": 135.039,
+     "end": 135.481
+    },
+    {
+     "w": "and",
+     "start": 135.481,
+     "end": 135.647
+    },
+    {
+     "w": "it's",
+     "start": 135.647,
+     "end": 135.812
+    },
+    {
+     "w": "not",
+     "start": 135.812,
+     "end": 136.089
+    },
+    {
+     "w": "going",
+     "start": 136.089,
+     "end": 136.42
+    },
+    {
+     "w": "anywhere.",
+     "start": 136.42,
+     "end": 136.917
+    }
+   ]
+  },
+  {
+   "id": "ai-3",
+   "beat": "ai",
+   "text": "Also, I'm not rich. I'm a broke bitch. Paycheck to paycheck, and even then it's not enough. I don't have a credit card.",
+   "start": 137.237,
+   "end": 145.232,
+   "words": [
+    {
+     "w": "Also,",
+     "start": 137.237,
+     "end": 137.876
+    },
+    {
+     "w": "I'm",
+     "start": 137.876,
+     "end": 138.051
+    },
+    {
+     "w": "not",
+     "start": 138.051,
+     "end": 138.341
+    },
+    {
+     "w": "rich.",
+     "start": 138.341,
+     "end": 138.69
+    },
+    {
+     "w": "I'm",
+     "start": 138.91,
+     "end": 139.13
+    },
+    {
+     "w": "a",
+     "start": 139.13,
+     "end": 139.35
+    },
+    {
+     "w": "broke",
+     "start": 139.35,
+     "end": 139.79
+    },
+    {
+     "w": "bitch",
+     "start": 139.79,
+     "end": 140.301,
+     "bleep": true
+    },
+    {
+     "w": "Paycheck",
+     "start": 140.561,
+     "end": 141.051
+    },
+    {
+     "w": "to",
+     "start": 141.051,
+     "end": 141.234
+    },
+    {
+     "w": "paycheck,",
+     "start": 141.234,
+     "end": 141.969
+    },
+    {
+     "w": "and",
+     "start": 141.969,
+     "end": 142.153
+    },
+    {
+     "w": "even",
+     "start": 142.153,
+     "end": 142.52
+    },
+    {
+     "w": "then",
+     "start": 142.52,
+     "end": 142.765
+    },
+    {
+     "w": "it's",
+     "start": 142.765,
+     "end": 142.949
+    },
+    {
+     "w": "not",
+     "start": 142.949,
+     "end": 143.255
+    },
+    {
+     "w": "enough.",
+     "start": 143.255,
+     "end": 143.622
+    },
+    {
+     "w": "I",
+     "start": 143.842,
+     "end": 143.981
+    },
+    {
+     "w": "don't",
+     "start": 143.981,
+     "end": 144.259
+    },
+    {
+     "w": "have",
+     "start": 144.259,
+     "end": 144.445
+    },
+    {
+     "w": "a",
+     "start": 144.445,
+     "end": 144.584
+    },
+    {
+     "w": "credit",
+     "start": 144.584,
+     "end": 144.908
+    },
+    {
+     "w": "card.",
+     "start": 144.908,
+     "end": 145.233
+    }
+   ]
+  },
+  {
+   "id": "ai-4",
+   "beat": "ai",
+   "text": "I can't drop a thousand dollars on an artist for half of one video that might never get seen. That's not a business deal. That's a bonfire.",
+   "start": 145.552,
+   "end": 154.24,
+   "words": [
+    {
+     "w": "I",
+     "start": 145.552,
+     "end": 145.74
+    },
+    {
+     "w": "can't",
+     "start": 145.74,
+     "end": 146.055
+    },
+    {
+     "w": "drop",
+     "start": 146.055,
+     "end": 146.431
+    },
+    {
+     "w": "a",
+     "start": 146.431,
+     "end": 146.62
+    },
+    {
+     "w": "thousand",
+     "start": 146.62,
+     "end": 147.122
+    },
+    {
+     "w": "dollars",
+     "start": 147.122,
+     "end": 147.562
+    },
+    {
+     "w": "on",
+     "start": 147.562,
+     "end": 147.751
+    },
+    {
+     "w": "an",
+     "start": 147.751,
+     "end": 147.876
+    },
+    {
+     "w": "artist",
+     "start": 147.876,
+     "end": 148.379
+    },
+    {
+     "w": "for",
+     "start": 148.379,
+     "end": 148.63
+    },
+    {
+     "w": "half",
+     "start": 148.63,
+     "end": 148.881
+    },
+    {
+     "w": "of",
+     "start": 148.881,
+     "end": 149.007
+    },
+    {
+     "w": "one",
+     "start": 149.007,
+     "end": 149.258
+    },
+    {
+     "w": "video",
+     "start": 149.258,
+     "end": 149.698
+    },
+    {
+     "w": "that",
+     "start": 149.698,
+     "end": 149.949
+    },
+    {
+     "w": "might",
+     "start": 149.949,
+     "end": 150.263
+    },
+    {
+     "w": "never",
+     "start": 150.263,
+     "end": 150.577
+    },
+    {
+     "w": "get",
+     "start": 150.577,
+     "end": 150.828
+    },
+    {
+     "w": "seen.",
+     "start": 150.828,
+     "end": 151.205
+    },
+    {
+     "w": "That's",
+     "start": 151.425,
+     "end": 151.707
+    },
+    {
+     "w": "not",
+     "start": 151.707,
+     "end": 151.989
+    },
+    {
+     "w": "a",
+     "start": 151.989,
+     "end": 152.158
+    },
+    {
+     "w": "business",
+     "start": 152.158,
+     "end": 152.552
+    },
+    {
+     "w": "deal.",
+     "start": 152.552,
+     "end": 152.891
+    },
+    {
+     "w": "That's",
+     "start": 153.111,
+     "end": 153.424
+    },
+    {
+     "w": "a",
+     "start": 153.424,
+     "end": 153.612
+    },
+    {
+     "w": "bonfire.",
+     "start": 153.612,
+     "end": 154.24
+    }
+   ]
+  },
+  {
+   "id": "ai-5",
+   "beat": "ai",
+   "text": "A hundred bucks a month for Claude, so my videos can actually look like videos? That, I can do.",
+   "start": 154.56,
+   "end": 160.752,
+   "words": [
+    {
+     "w": "A",
+     "start": 154.56,
+     "end": 154.734
+    },
+    {
+     "w": "hundred",
+     "start": 154.734,
+     "end": 155.196
+    },
+    {
+     "w": "bucks",
+     "start": 155.196,
+     "end": 155.486
+    },
+    {
+     "w": "a",
+     "start": 155.486,
+     "end": 155.659
+    },
+    {
+     "w": "month",
+     "start": 155.659,
+     "end": 155.949
+    },
+    {
+     "w": "for",
+     "start": 155.949,
+     "end": 156.18
+    },
+    {
+     "w": "Claude,",
+     "start": 156.18,
+     "end": 156.759
+    },
+    {
+     "w": "so",
+     "start": 156.759,
+     "end": 156.99
+    },
+    {
+     "w": "my",
+     "start": 156.99,
+     "end": 157.222
+    },
+    {
+     "w": "videos",
+     "start": 157.222,
+     "end": 157.684
+    },
+    {
+     "w": "can",
+     "start": 157.684,
+     "end": 157.916
+    },
+    {
+     "w": "actually",
+     "start": 157.916,
+     "end": 158.495
+    },
+    {
+     "w": "look",
+     "start": 158.495,
+     "end": 158.726
+    },
+    {
+     "w": "like",
+     "start": 158.726,
+     "end": 159.015
+    },
+    {
+     "w": "videos?",
+     "start": 159.015,
+     "end": 159.536
+    },
+    {
+     "w": "That,",
+     "start": 159.756,
+     "end": 160.154
+    },
+    {
+     "w": "I",
+     "start": 160.154,
+     "end": 160.304
+    },
+    {
+     "w": "can",
+     "start": 160.304,
+     "end": 160.503
+    },
+    {
+     "w": "do.",
+     "start": 160.503,
+     "end": 160.752
+    }
+   ]
+  },
+  {
+   "id": "ai-6",
+   "beat": "ai",
+   "text": "I work all the time. I have a spinal condition. I am exactly the person these tools are for.",
+   "start": 161.072,
+   "end": 167.04,
+   "words": [
+    {
+     "w": "I",
+     "start": 161.072,
+     "end": 161.266
+    },
+    {
+     "w": "work",
+     "start": 161.266,
+     "end": 161.59
+    },
+    {
+     "w": "all",
+     "start": 161.59,
+     "end": 161.849
+    },
+    {
+     "w": "the",
+     "start": 161.849,
+     "end": 161.979
+    },
+    {
+     "w": "time.",
+     "start": 161.979,
+     "end": 162.367
+    },
+    {
+     "w": "I",
+     "start": 162.587,
+     "end": 162.755
+    },
+    {
+     "w": "have",
+     "start": 162.755,
+     "end": 162.978
+    },
+    {
+     "w": "a",
+     "start": 162.978,
+     "end": 163.145
+    },
+    {
+     "w": "spinal",
+     "start": 163.145,
+     "end": 163.591
+    },
+    {
+     "w": "condition.",
+     "start": 163.591,
+     "end": 164.149
+    },
+    {
+     "w": "I",
+     "start": 164.369,
+     "end": 164.56
+    },
+    {
+     "w": "am",
+     "start": 164.56,
+     "end": 164.687
+    },
+    {
+     "w": "exactly",
+     "start": 164.687,
+     "end": 165.259
+    },
+    {
+     "w": "the",
+     "start": 165.259,
+     "end": 165.387
+    },
+    {
+     "w": "person",
+     "start": 165.387,
+     "end": 165.832
+    },
+    {
+     "w": "these",
+     "start": 165.832,
+     "end": 166.15
+    },
+    {
+     "w": "tools",
+     "start": 166.15,
+     "end": 166.531
+    },
+    {
+     "w": "are",
+     "start": 166.531,
+     "end": 166.722
+    },
+    {
+     "w": "for.",
+     "start": 166.722,
+     "end": 167.04
+    }
+   ]
+  },
+  {
+   "id": "ai-7",
+   "beat": "ai",
+   "text": "So I'll show you how I use them. If you don't like that, that's fine. You're allowed. Genuinely.",
+   "start": 167.36,
+   "end": 173.061,
+   "words": [
+    {
+     "w": "So",
+     "start": 167.36,
+     "end": 167.587
+    },
+    {
+     "w": "I'll",
+     "start": 167.587,
+     "end": 167.757
+    },
+    {
+     "w": "show",
+     "start": 167.757,
+     "end": 167.984
+    },
+    {
+     "w": "you",
+     "start": 167.984,
+     "end": 168.154
+    },
+    {
+     "w": "how",
+     "start": 168.154,
+     "end": 168.381
+    },
+    {
+     "w": "I",
+     "start": 168.381,
+     "end": 168.551
+    },
+    {
+     "w": "use",
+     "start": 168.551,
+     "end": 168.835
+    },
+    {
+     "w": "them.",
+     "start": 168.835,
+     "end": 169.119
+    },
+    {
+     "w": "If",
+     "start": 169.339,
+     "end": 169.435
+    },
+    {
+     "w": "you",
+     "start": 169.435,
+     "end": 169.58
+    },
+    {
+     "w": "don't",
+     "start": 169.58,
+     "end": 169.87
+    },
+    {
+     "w": "like",
+     "start": 169.87,
+     "end": 170.111
+    },
+    {
+     "w": "that,",
+     "start": 170.111,
+     "end": 170.498
+    },
+    {
+     "w": "that's",
+     "start": 170.498,
+     "end": 170.739
+    },
+    {
+     "w": "fine.",
+     "start": 170.739,
+     "end": 171.029
+    },
+    {
+     "w": "You're",
+     "start": 171.249,
+     "end": 171.484
+    },
+    {
+     "w": "allowed.",
+     "start": 171.484,
+     "end": 172.034
+    },
+    {
+     "w": "Genuinely.",
+     "start": 172.254,
+     "end": 173.061
+    }
+   ]
+  },
+  {
+   "id": "ai-8",
+   "beat": "ai",
+   "text": "Case in point. This voice? AI. These graphics? Code. The plum? Also code. Look at it go.",
+   "start": 173.381,
+   "end": 181.547,
+   "words": [
+    {
+     "w": "Case",
+     "start": 173.381,
+     "end": 173.708
+    },
+    {
+     "w": "in",
+     "start": 173.708,
+     "end": 173.904
+    },
+    {
+     "w": "point.",
+     "start": 173.904,
+     "end": 174.362
+    },
+    {
+     "w": "This",
+     "start": 174.582,
+     "end": 174.904
+    },
+    {
+     "w": "voice?",
+     "start": 174.904,
+     "end": 175.388
+    },
+    {
+     "w": "AI.",
+     "start": 175.608,
+     "end": 176.225
+    },
+    {
+     "w": "These",
+     "start": 176.445,
+     "end": 176.806
+    },
+    {
+     "w": "graphics?",
+     "start": 176.806,
+     "end": 177.457
+    },
+    {
+     "w": "Code.",
+     "start": 177.677,
+     "end": 178.237
+    },
+    {
+     "w": "The",
+     "start": 178.457,
+     "end": 178.631
+    },
+    {
+     "w": "plum?",
+     "start": 178.631,
+     "end": 179.154
+    },
+    {
+     "w": "Also",
+     "start": 179.374,
+     "end": 179.881
+    },
+    {
+     "w": "code.",
+     "start": 179.881,
+     "end": 180.316
+    },
+    {
+     "w": "Look",
+     "start": 180.536,
+     "end": 180.847
+    },
+    {
+     "w": "at",
+     "start": 180.847,
+     "end": 181.002
+    },
+    {
+     "w": "it",
+     "start": 181.002,
+     "end": 181.158
+    },
+    {
+     "w": "go.",
+     "start": 181.158,
+     "end": 181.547
+    }
+   ]
+  },
+  {
+   "id": "why-1",
+   "beat": "why",
+   "text": "The actual goal is simple. Make enough money to buy land.",
+   "start": 182.297,
+   "end": 185.8,
+   "words": [
+    {
+     "w": "The",
+     "start": 182.297,
+     "end": 182.415
+    },
+    {
+     "w": "actual",
+     "start": 182.415,
+     "end": 182.948
+    },
+    {
+     "w": "goal",
+     "start": 182.948,
+     "end": 183.244
+    },
+    {
+     "w": "is",
+     "start": 183.244,
+     "end": 183.362
+    },
+    {
+     "w": "simple.",
+     "start": 183.362,
+     "end": 183.835
+    },
+    {
+     "w": "Make",
+     "start": 184.055,
+     "end": 184.367
+    },
+    {
+     "w": "enough",
+     "start": 184.367,
+     "end": 184.679
+    },
+    {
+     "w": "money",
+     "start": 184.679,
+     "end": 184.99
+    },
+    {
+     "w": "to",
+     "start": 184.99,
+     "end": 185.177
+    },
+    {
+     "w": "buy",
+     "start": 185.177,
+     "end": 185.427
+    },
+    {
+     "w": "land.",
+     "start": 185.427,
+     "end": 185.801
+    }
+   ]
+  },
+  {
+   "id": "why-2",
+   "beat": "why",
+   "text": "Use that land to try some of my bigger ideas. Then bring them back to my main channel, and finally close out some storylines I've left open for years.",
+   "start": 186.12,
+   "end": 196.011,
+   "words": [
+    {
+     "w": "Use",
+     "start": 186.12,
+     "end": 186.459
+    },
+    {
+     "w": "that",
+     "start": 186.459,
+     "end": 186.731
+    },
+    {
+     "w": "land",
+     "start": 186.731,
+     "end": 187.07
+    },
+    {
+     "w": "to",
+     "start": 187.07,
+     "end": 187.274
+    },
+    {
+     "w": "try",
+     "start": 187.274,
+     "end": 187.613
+    },
+    {
+     "w": "some",
+     "start": 187.613,
+     "end": 187.885
+    },
+    {
+     "w": "of",
+     "start": 187.885,
+     "end": 188.021
+    },
+    {
+     "w": "my",
+     "start": 188.021,
+     "end": 188.292
+    },
+    {
+     "w": "bigger",
+     "start": 188.292,
+     "end": 188.632
+    },
+    {
+     "w": "ideas.",
+     "start": 188.632,
+     "end": 189.175
+    },
+    {
+     "w": "Then",
+     "start": 189.395,
+     "end": 189.654
+    },
+    {
+     "w": "bring",
+     "start": 189.654,
+     "end": 189.979
+    },
+    {
+     "w": "them",
+     "start": 189.979,
+     "end": 190.238
+    },
+    {
+     "w": "back",
+     "start": 190.238,
+     "end": 190.497
+    },
+    {
+     "w": "to",
+     "start": 190.497,
+     "end": 190.692
+    },
+    {
+     "w": "my",
+     "start": 190.692,
+     "end": 190.951
+    },
+    {
+     "w": "main",
+     "start": 190.951,
+     "end": 191.276
+    },
+    {
+     "w": "channel,",
+     "start": 191.276,
+     "end": 191.989
+    },
+    {
+     "w": "and",
+     "start": 191.989,
+     "end": 192.184
+    },
+    {
+     "w": "finally",
+     "start": 192.184,
+     "end": 192.703
+    },
+    {
+     "w": "close",
+     "start": 192.703,
+     "end": 193.092
+    },
+    {
+     "w": "out",
+     "start": 193.092,
+     "end": 193.351
+    },
+    {
+     "w": "some",
+     "start": 193.351,
+     "end": 193.611
+    },
+    {
+     "w": "storylines",
+     "start": 193.611,
+     "end": 194.454
+    },
+    {
+     "w": "I've",
+     "start": 194.454,
+     "end": 194.648
+    },
+    {
+     "w": "left",
+     "start": 194.648,
+     "end": 194.973
+    },
+    {
+     "w": "open",
+     "start": 194.973,
+     "end": 195.362
+    },
+    {
+     "w": "for",
+     "start": 195.362,
+     "end": 195.621
+    },
+    {
+     "w": "years.",
+     "start": 195.621,
+     "end": 196.01
+    }
+   ]
+  },
+  {
+   "id": "why-3",
+   "beat": "why",
+   "text": "Could I take out a loan? Sure. Blah, blah, blah. I don't want to.",
+   "start": 196.331,
+   "end": 200.868,
+   "words": [
+    {
+     "w": "Could",
+     "start": 196.331,
+     "end": 196.536
+    },
+    {
+     "w": "I",
+     "start": 196.536,
+     "end": 196.69
+    },
+    {
+     "w": "take",
+     "start": 196.69,
+     "end": 196.946
+    },
+    {
+     "w": "out",
+     "start": 196.946,
+     "end": 197.15
+    },
+    {
+     "w": "a",
+     "start": 197.15,
+     "end": 197.304
+    },
+    {
+     "w": "loan?",
+     "start": 197.304,
+     "end": 197.611
+    },
+    {
+     "w": "Sure.",
+     "start": 197.831,
+     "end": 198.358
+    },
+    {
+     "w": "Blah,",
+     "start": 198.578,
+     "end": 198.986
+    },
+    {
+     "w": "blah,",
+     "start": 198.986,
+     "end": 199.393
+    },
+    {
+     "w": "blah.",
+     "start": 199.393,
+     "end": 199.665
+    },
+    {
+     "w": "I",
+     "start": 199.885,
+     "end": 200.049
+    },
+    {
+     "w": "don't",
+     "start": 200.049,
+     "end": 200.377
+    },
+    {
+     "w": "want",
+     "start": 200.377,
+     "end": 200.65
+    },
+    {
+     "w": "to.",
+     "start": 200.65,
+     "end": 200.868
+    }
+   ]
+  },
+  {
+   "id": "why-4",
+   "beat": "why",
+   "text": "I want to make a silly little game. Then another one. And track what AI can and can't do for game dev and video editing, as it gets better.",
+   "start": 201.188,
+   "end": 210.005,
+   "words": [
+    {
+     "w": "I",
+     "start": 201.188,
+     "end": 201.334
+    },
+    {
+     "w": "want",
+     "start": 201.334,
+     "end": 201.576
+    },
+    {
+     "w": "to",
+     "start": 201.576,
+     "end": 201.722
+    },
+    {
+     "w": "make",
+     "start": 201.722,
+     "end": 201.965
+    },
+    {
+     "w": "a",
+     "start": 201.965,
+     "end": 202.111
+    },
+    {
+     "w": "silly",
+     "start": 202.111,
+     "end": 202.353
+    },
+    {
+     "w": "little",
+     "start": 202.353,
+     "end": 202.645
+    },
+    {
+     "w": "game.",
+     "start": 202.645,
+     "end": 202.936
+    },
+    {
+     "w": "Then",
+     "start": 203.156,
+     "end": 203.417
+    },
+    {
+     "w": "another",
+     "start": 203.417,
+     "end": 203.808
+    },
+    {
+     "w": "one.",
+     "start": 203.808,
+     "end": 204.134
+    },
+    {
+     "w": "And",
+     "start": 204.354,
+     "end": 204.558
+    },
+    {
+     "w": "track",
+     "start": 204.558,
+     "end": 204.899
+    },
+    {
+     "w": "what",
+     "start": 204.899,
+     "end": 205.171
+    },
+    {
+     "w": "AI",
+     "start": 205.171,
+     "end": 205.579
+    },
+    {
+     "w": "can",
+     "start": 205.579,
+     "end": 205.852
+    },
+    {
+     "w": "and",
+     "start": 205.852,
+     "end": 206.056
+    },
+    {
+     "w": "can't",
+     "start": 206.056,
+     "end": 206.396
+    },
+    {
+     "w": "do",
+     "start": 206.396,
+     "end": 206.669
+    },
+    {
+     "w": "for",
+     "start": 206.669,
+     "end": 206.941
+    },
+    {
+     "w": "game",
+     "start": 206.941,
+     "end": 207.281
+    },
+    {
+     "w": "dev",
+     "start": 207.281,
+     "end": 207.554
+    },
+    {
+     "w": "and",
+     "start": 207.554,
+     "end": 207.758
+    },
+    {
+     "w": "video",
+     "start": 207.758,
+     "end": 208.235
+    },
+    {
+     "w": "editing,",
+     "start": 208.235,
+     "end": 208.984
+    },
+    {
+     "w": "as",
+     "start": 208.984,
+     "end": 209.12
+    },
+    {
+     "w": "it",
+     "start": 209.12,
+     "end": 209.256
+    },
+    {
+     "w": "gets",
+     "start": 209.256,
+     "end": 209.596
+    },
+    {
+     "w": "better.",
+     "start": 209.596,
+     "end": 210.005
+    }
+   ]
+  },
+  {
+   "id": "silly-1",
+   "beat": "silly",
+   "text": "A while back, I saw a video that said, it's just storytelling. That's all this is.",
+   "start": 210.755,
+   "end": 215.713,
+   "words": [
+    {
+     "w": "A",
+     "start": 210.755,
+     "end": 210.914
+    },
+    {
+     "w": "while",
+     "start": 210.914,
+     "end": 211.179
+    },
+    {
+     "w": "back,",
+     "start": 211.179,
+     "end": 211.602
+    },
+    {
+     "w": "I",
+     "start": 211.602,
+     "end": 211.761
+    },
+    {
+     "w": "saw",
+     "start": 211.761,
+     "end": 211.973
+    },
+    {
+     "w": "a",
+     "start": 211.973,
+     "end": 212.132
+    },
+    {
+     "w": "video",
+     "start": 212.132,
+     "end": 212.502
+    },
+    {
+     "w": "that",
+     "start": 212.502,
+     "end": 212.714
+    },
+    {
+     "w": "said,",
+     "start": 212.714,
+     "end": 213.138
+    },
+    {
+     "w": "it's",
+     "start": 213.138,
+     "end": 213.296
+    },
+    {
+     "w": "just",
+     "start": 213.296,
+     "end": 213.614
+    },
+    {
+     "w": "storytelling.",
+     "start": 213.614,
+     "end": 214.355
+    },
+    {
+     "w": "That's",
+     "start": 214.575,
+     "end": 214.931
+    },
+    {
+     "w": "all",
+     "start": 214.931,
+     "end": 215.215
+    },
+    {
+     "w": "this",
+     "start": 215.215,
+     "end": 215.5
+    },
+    {
+     "w": "is.",
+     "start": 215.5,
+     "end": 215.713
+    }
+   ]
+  },
+  {
+   "id": "silly-2",
+   "beat": "silly",
+   "text": "And somewhere along the way, my stuff stopped being stories, and started having an agenda.",
+   "start": 216.033,
+   "end": 221.422,
+   "words": [
+    {
+     "w": "And",
+     "start": 216.033,
+     "end": 216.217
+    },
+    {
+     "w": "somewhere",
+     "start": 216.217,
+     "end": 216.645
+    },
+    {
+     "w": "along",
+     "start": 216.645,
+     "end": 216.952
+    },
+    {
+     "w": "the",
+     "start": 216.952,
+     "end": 217.074
+    },
+    {
+     "w": "way,",
+     "start": 217.074,
+     "end": 217.564
+    },
+    {
+     "w": "my",
+     "start": 217.564,
+     "end": 217.809
+    },
+    {
+     "w": "stuff",
+     "start": 217.809,
+     "end": 218.115
+    },
+    {
+     "w": "stopped",
+     "start": 218.115,
+     "end": 218.544
+    },
+    {
+     "w": "being",
+     "start": 218.544,
+     "end": 218.911
+    },
+    {
+     "w": "stories,",
+     "start": 218.911,
+     "end": 219.646
+    },
+    {
+     "w": "and",
+     "start": 219.646,
+     "end": 219.83
+    },
+    {
+     "w": "started",
+     "start": 219.83,
+     "end": 220.381
+    },
+    {
+     "w": "having",
+     "start": 220.381,
+     "end": 220.748
+    },
+    {
+     "w": "an",
+     "start": 220.748,
+     "end": 220.871
+    },
+    {
+     "w": "agenda.",
+     "start": 220.871,
+     "end": 221.422
+    }
+   ]
+  },
+  {
+   "id": "silly-3",
+   "beat": "silly",
+   "text": "I needed people to be open minded about AI. People were not. They brigaded. They piled on. It stopped being fun.",
+   "start": 221.742,
+   "end": 229.764,
+   "words": [
+    {
+     "w": "I",
+     "start": 221.742,
+     "end": 221.919
+    },
+    {
+     "w": "needed",
+     "start": 221.919,
+     "end": 222.331
+    },
+    {
+     "w": "people",
+     "start": 222.331,
+     "end": 222.743
+    },
+    {
+     "w": "to",
+     "start": 222.743,
+     "end": 222.92
+    },
+    {
+     "w": "be",
+     "start": 222.92,
+     "end": 223.156
+    },
+    {
+     "w": "open",
+     "start": 223.156,
+     "end": 223.509
+    },
+    {
+     "w": "minded",
+     "start": 223.509,
+     "end": 223.98
+    },
+    {
+     "w": "about",
+     "start": 223.98,
+     "end": 224.333
+    },
+    {
+     "w": "AI.",
+     "start": 224.333,
+     "end": 224.746
+    },
+    {
+     "w": "People",
+     "start": 224.966,
+     "end": 225.382
+    },
+    {
+     "w": "were",
+     "start": 225.382,
+     "end": 225.56
+    },
+    {
+     "w": "not.",
+     "start": 225.56,
+     "end": 225.917
+    },
+    {
+     "w": "They",
+     "start": 226.137,
+     "end": 226.341
+    },
+    {
+     "w": "brigaded.",
+     "start": 226.341,
+     "end": 227.087
+    },
+    {
+     "w": "They",
+     "start": 227.307,
+     "end": 227.537
+    },
+    {
+     "w": "piled",
+     "start": 227.537,
+     "end": 227.996
+    },
+    {
+     "w": "on.",
+     "start": 227.996,
+     "end": 228.303
+    },
+    {
+     "w": "It",
+     "start": 228.523,
+     "end": 228.647
+    },
+    {
+     "w": "stopped",
+     "start": 228.647,
+     "end": 229.082
+    },
+    {
+     "w": "being",
+     "start": 229.082,
+     "end": 229.454
+    },
+    {
+     "w": "fun.",
+     "start": 229.454,
+     "end": 229.764
+    }
+   ]
+  },
+  {
+   "id": "silly-4",
+   "beat": "silly",
+   "text": "I've been serious for years. Serious stuff, with serious people. And it fucking sucks.",
+   "start": 230.084,
+   "end": 235.837,
+   "words": [
+    {
+     "w": "I've",
+     "start": 230.084,
+     "end": 230.276
+    },
+    {
+     "w": "been",
+     "start": 230.276,
+     "end": 230.531
+    },
+    {
+     "w": "serious",
+     "start": 230.531,
+     "end": 230.978
+    },
+    {
+     "w": "for",
+     "start": 230.978,
+     "end": 231.234
+    },
+    {
+     "w": "years.",
+     "start": 231.234,
+     "end": 231.617
+    },
+    {
+     "w": "Serious",
+     "start": 231.837,
+     "end": 232.231
+    },
+    {
+     "w": "stuff,",
+     "start": 232.231,
+     "end": 232.739
+    },
+    {
+     "w": "with",
+     "start": 232.739,
+     "end": 232.908
+    },
+    {
+     "w": "serious",
+     "start": 232.908,
+     "end": 233.302
+    },
+    {
+     "w": "people.",
+     "start": 233.302,
+     "end": 233.753
+    },
+    {
+     "w": "And",
+     "start": 233.973,
+     "end": 234.318
+    },
+    {
+     "w": "it",
+     "start": 234.318,
+     "end": 234.548
+    },
+    {
+     "w": "fucking",
+     "start": 234.548,
+     "end": 235.205,
+     "bleep": true
+    },
+    {
+     "w": "sucks.",
+     "start": 235.245,
+     "end": 235.837
+    }
+   ]
+  },
+  {
+   "id": "silly-5",
+   "beat": "silly",
+   "text": "I don't like being serious. I like being silly.",
+   "start": 236.157,
+   "end": 238.963,
+   "words": [
+    {
+     "w": "I",
+     "start": 236.157,
+     "end": 236.313
+    },
+    {
+     "w": "don't",
+     "start": 236.313,
+     "end": 236.624
+    },
+    {
+     "w": "like",
+     "start": 236.624,
+     "end": 236.883
+    },
+    {
+     "w": "being",
+     "start": 236.883,
+     "end": 237.195
+    },
+    {
+     "w": "serious.",
+     "start": 237.195,
+     "end": 237.61
+    },
+    {
+     "w": "I",
+     "start": 237.83,
+     "end": 238.0
+    },
+    {
+     "w": "like",
+     "start": 238.0,
+     "end": 238.283
+    },
+    {
+     "w": "being",
+     "start": 238.283,
+     "end": 238.623
+    },
+    {
+     "w": "silly.",
+     "start": 238.623,
+     "end": 238.963
+    }
+   ]
+  },
+  {
+   "id": "silly-6",
+   "beat": "silly",
+   "text": "So this channel is me, being silly again.",
+   "start": 240.163,
+   "end": 242.44,
+   "words": [
+    {
+     "w": "So",
+     "start": 240.163,
+     "end": 240.38
+    },
+    {
+     "w": "this",
+     "start": 240.38,
+     "end": 240.597
+    },
+    {
+     "w": "channel",
+     "start": 240.597,
+     "end": 240.976
+    },
+    {
+     "w": "is",
+     "start": 240.976,
+     "end": 241.085
+    },
+    {
+     "w": "me,",
+     "start": 241.085,
+     "end": 241.519
+    },
+    {
+     "w": "being",
+     "start": 241.519,
+     "end": 241.844
+    },
+    {
+     "w": "silly",
+     "start": 241.844,
+     "end": 242.115
+    },
+    {
+     "w": "again.",
+     "start": 242.115,
+     "end": 242.44
+    }
+   ]
+  },
+  {
+   "id": "out-1",
+   "beat": "out",
+   "text": "This is Beeplumb. This is the first brush stroke.",
+   "start": 243.19,
+   "end": 246.239,
+   "words": [
+    {
+     "w": "This",
+     "start": 243.19,
+     "end": 243.476
+    },
+    {
+     "w": "is",
+     "start": 243.476,
+     "end": 243.619
+    },
+    {
+     "w": "Beeplumb.",
+     "start": 243.619,
+     "end": 244.262
+    },
+    {
+     "w": "This",
+     "start": 244.482,
+     "end": 244.742
+    },
+    {
+     "w": "is",
+     "start": 244.742,
+     "end": 244.872
+    },
+    {
+     "w": "the",
+     "start": 244.872,
+     "end": 245.002
+    },
+    {
+     "w": "first",
+     "start": 245.002,
+     "end": 245.393
+    },
+    {
+     "w": "brush",
+     "start": 245.393,
+     "end": 245.718
+    },
+    {
+     "w": "stroke.",
+     "start": 245.718,
+     "end": 246.238
+    }
+   ]
+  },
+  {
+   "id": "out-2",
+   "beat": "out",
+   "text": "Next up, the game. Let's see what we paint.",
+   "start": 246.559,
+   "end": 249.129,
+   "words": [
+    {
+     "w": "Next",
+     "start": 246.559,
+     "end": 246.874
+    },
+    {
+     "w": "up,",
+     "start": 246.874,
+     "end": 247.241
+    },
+    {
+     "w": "the",
+     "start": 247.241,
+     "end": 247.346
+    },
+    {
+     "w": "game.",
+     "start": 247.346,
+     "end": 247.66
+    },
+    {
+     "w": "Let's",
+     "start": 247.88,
+     "end": 248.152
+    },
+    {
+     "w": "see",
+     "start": 248.152,
+     "end": 248.369
+    },
+    {
+     "w": "what",
+     "start": 248.369,
+     "end": 248.586
+    },
+    {
+     "w": "we",
+     "start": 248.586,
+     "end": 248.749
+    },
+    {
+     "w": "paint.",
+     "start": 248.749,
+     "end": 249.129
+    }
+   ]
+  }
+ ]
+}

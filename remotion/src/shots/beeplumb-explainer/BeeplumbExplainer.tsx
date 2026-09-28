@@ -7,9 +7,6 @@ import {
   Audio,
   staticFile,
   Easing,
-  delayRender,
-  continueRender,
-  cancelRender,
 } from 'remotion';
 
 // =============================================================================
@@ -36,8 +33,10 @@ const C = {
   green: '#00cc44', dos: '#00ff41',
 } as const;
 
-// Fonts are bundled in media/projects/beeplumb-explainer/fonts/ (OFL) so the render needs
-// no network font fetch. delayRender holds every frame until all three faces are ready.
+// Fonts are bundled in media/projects/beeplumb-explainer/fonts/ (OFL) so the render needs no
+// network font fetch. Declared with plain @font-face, not delayRender: the renderer awaits
+// document.fonts.ready before each frame, and a module-level delayRender handle is never
+// released during renderMedia (any render longer than its timeout dies).
 const CRT = 'BeeplumbVT323';
 const MONO = 'BeeplumbCourierPrime';
 const FONT_FILES: [string, string, string][] = [
@@ -45,12 +44,12 @@ const FONT_FILES: [string, string, string][] = [
   [MONO, '400', 'CourierPrime-400.woff2'],
   [MONO, '700', 'CourierPrime-700.woff2'],
 ];
-if (typeof document !== 'undefined') {
-  const handle = delayRender('beeplumb fonts', { timeoutInMilliseconds: 120000 });
-  Promise.all(FONT_FILES.map(([family, weight, file]) => {
-    const face = new FontFace(family, `url(${staticFile(`projects/beeplumb-explainer/fonts/${file}`)})`, { weight });
-    return face.load().then((f) => { (document.fonts as unknown as { add: (x: FontFace) => void }).add(f); });
-  })).then(() => continueRender(handle), (err) => cancelRender(err));
+if (typeof document !== 'undefined' && !document.getElementById('beeplumb-explainer-fonts')) {
+  const style = document.createElement('style');
+  style.id = 'beeplumb-explainer-fonts';
+  style.textContent = FONT_FILES.map(([family, weight, file]) =>
+    `@font-face{font-family:'${family}';font-weight:${weight};font-display:block;src:url(${staticFile(`projects/beeplumb-explainer/fonts/${file}`)}) format('woff2');}`).join('\n');
+  document.head.appendChild(style);
 }
 
 const EASE_OUT = Easing.bezier(0.22, 0.72, 0.28, 1);

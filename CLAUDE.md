@@ -14,6 +14,8 @@ your cut. No screen recording, no video editor. The right skill is picked from t
 | add SFX / sound-design a beat | `/suggest-sfx` | `videos/<project>/work/sfx-plan.json` + an audition mix |
 | package a video / titles + thumbnails | `/packaging` | `videos/<project>/packaging/` (1 title × 3 thumbnail bets + rendered thumbs) |
 | make / iterate thumbnails only | `/thumbnail` | rendered + verified frames in `videos/<project>/packaging/thumbs/` (asks which style elements you want) |
+| make a voiceover with no API key (free, local) | `tools/gen_vo_local.py` (run `tools/fetch_kokoro.py` once) | `vo.wav` + word timings + a mascot mouth track; see `videos/beeplumb-01-blank-canvas/README.md` |
+| find a free / open-source tool for a job | `docs/open-source-tools.md` | ranked picks per category, with licenses to watch |
 | upload it | `tools/yt_upload.py` | a private draft on YouTube |
 | track it / put it in Notion | `tools/notion_sync.py` | the video's row in the Notion content tracker |
 
