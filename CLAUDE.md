@@ -73,6 +73,14 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
   resolves to a system interpreter will hit `ModuleNotFoundError` (requests, Pillow, google-*) — that
   error means you're not on the venv. `ffmpeg`/`ffprobe` and `node`/`npx` must be on PATH (not pip).
 
+- **Free local stack first.** Four paid steps have free, offline replacements that write the same files:
+  `tools/transcribe_local.py` (faster-whisper + WhisperX, instead of AssemblyAI), `tools/clean_voice.py
+  --method deepfilter` (DeepFilterNet, instead of ElevenLabs isolation), `tools/gen_music_local.py`
+  (ACE-Step 1.5, MIT: music the channel owns, instead of ElevenLabs music), plus `tools/auto_cut.py`
+  (auto-editor silence first pass for the cut). Setup: `pip install -r requirements-local.txt` then
+  `python tools/install_local_ai.py all`; `python tools/install_local_ai.py check` shows what works.
+  Prefer these; use the paid APIs when a local result isn't good enough (filler recall, running water).
+
 - **API keys** live in `.env` at the repo root (copy `.env.example`). Never commit `.env`.
   `ASSEMBLYAI_API_KEY` = transcription · `ELEVENLABS_API_KEY` = voice-isolate + SFX + music ·
   `GEMINI_API_KEY` = thumbnails · `NOTION_TOKEN` + `NOTION_LONGS_PAGE_ID` = the content tracker.

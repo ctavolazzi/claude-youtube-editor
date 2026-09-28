@@ -25,10 +25,13 @@ Let `P` = the project (e.g. `video-1`). Clip **id** = a short handle (`0233`); e
    ElevenLabs
    Cloudflare
    ```
-3. **Transcribe** (needs `ASSEMBLYAI_API_KEY` in `.env`; verbatim, keeps fillers; auto-loads `work/keyterms.txt`):
-   `python tools/transcribe.py P` → `P/work/transcripts/<id>.json`. `--clips 0233` for one, `--force` to redo. It prints how many keyterms it loaded — a "none" line means you haven't drafted them.
+3. **Transcribe** (verbatim, keeps fillers; auto-loads `work/keyterms.txt`). Two drop-in engines, same output file and fields:
+   - **Local, free (default when no `ASSEMBLYAI_API_KEY`):** `python tools/transcribe_local.py P [--align]` → `P/work/transcripts/<id>.json`. faster-whisper with keyterms as hotwords and a disfluent priming prompt; `--align` refines every word's timing with WhisperX (use it when beats must land on words). `--model small --device cpu` on a machine without a GPU. It catches fewer "um"s than AssemblyAI, so lean on step 6's ghost-speech check.
+   - **AssemblyAI (paid, best filler recall):** `python tools/transcribe.py P` (needs `ASSEMBLYAI_API_KEY` in `.env`).
+   Both take `--clips 0233` for one clip and `--force` to redo, and print how many keyterms they loaded — a "none" line means you haven't drafted them.
 4. **Readable take view** for analysis: `python tools/format_transcript.py P` → `P/work/analysis/takes-<id>.txt` (segments on >0.8s gaps, fillers tagged inline with timestamps).
-5. **Author `cuts.json`** (see schema below) by reading `takes-*.txt`: mark every span as a keep or a categorized cut, add fluff suggestions and judgment-call flags.
+4.5. **Mechanical first pass:** `python tools/auto_cut.py P --write` → `work/analysis/cuts.auto.json` (+ `cuts.json` if none exists). auto-editor finds the silences: speech runs become keeps, silences ≥0.6s become `long_pause` / `dead_air` cuts, transcript fillers become `filler` cuts. Short breaths stay in (the styles compress them). It never decides retakes, false starts, doubled phrases or fluff — step 5 does. `--nle resolve|premiere|final-cut-pro` also writes an editor timeline per raw clip for anyone finishing by hand.
+5. **Author `cuts.json`** (see schema below) by reading `takes-*.txt`, starting from the step-4.5 draft: mark every span as a keep or a categorized cut, add fluff suggestions and judgment-call flags.
 6. **QA + review docs**:
    `python tools/analyze_cut.py P [--style tight]` → `qa-report.md` (internal dead-air, clipped-tail risks, tiny fragments, fluff, hard entries at cut joins, **ghost speech** = untranscribed energy riding inside a keep, low-confidence kept tokens). Ghost/hard-entry checks exist because a transcript diff CANNOT see a mistimed token (clipped word onset) or an untranscribed false start ("and it—") that survives the cut — only energy-vs-token cross-checks catch them (a careful listen caught both before these checks existed).
    `python tools/make_review.py P` → `review.md` (per-clip keep/cut table + estimated length per style).
@@ -36,7 +39,7 @@ Let `P` = the project (e.g. `video-1`). Clip **id** = a short handle (`0233`); e
 8. **Previews** (render BOTH, user picks): `python tools/render_cuts.py P --style tight --mode preview` and `--style natural` → `P/output/preview-<style>.mp4` (720p h264_nvenc).
 8.5. **Machine verification of the render (MANDATORY after every preview render, before
    showing the user).** Extract the preview's WAV → `transcribe.py P --clips preview
-   --force` → `python tools/verify_cut.py P` → `verify-report.md`. A second ASR pass
+   --force` (or `transcribe_local.py`, same flags) → `python tools/verify_cut.py P` → `verify-report.md`. A second ASR pass
    over the RENDER, diffed against the intended kept tokens: EXTRA words = untranscribed
    ghosts that rode along (false starts glued to word tails — invisible to the raw
    transcript, and energy heuristics can't tell them from word releases); MISSING words

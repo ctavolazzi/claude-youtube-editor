@@ -1,5 +1,5 @@
 {
-  "note": "Generation recipes for the shared MUSIC library (media/library/music/). SOURCE OF TRUTH for reusable, generically-named background beds. tools/gen_music.py reads this, generates any MISSING clip via the ElevenLabs Music API (force_instrumental), loudness-normalizes it to a bed level, and writes media/library/music/catalog.json. Beds are meant to sit UNDER the voice as a continuous, ducked bed (tools/mix_music.py handles the ducking). Brand taste (brand.md §10): calm/premium (Linear/Anthropic/Vercel) — subtle, felt-not-heard, no hype, no big drops, consistent throughout so it never distracts from the teaching. duration_s here is the TEST length; regenerate the chosen bed at full video length with `--only <id> --length <ms>`.",
+  "note": "Generation recipes for the shared MUSIC library (media/library/music/). SOURCE OF TRUTH for reusable, generically-named background beds. tools/gen_music.py reads this, generates any MISSING clip via the ElevenLabs Music API (force_instrumental), loudness-normalizes it to a bed level, and writes media/library/music/catalog.json. Beds are meant to sit UNDER the voice as a continuous, ducked bed (tools/mix_music.py handles the ducking). Brand taste (brand.md §10): calm/premium (Linear/Anthropic/Vercel) — subtle, felt-not-heard, no hype, no big drops, consistent throughout so it never distracts from the teaching. duration_s here is the TEST length; regenerate the chosen bed at full video length with `--only <id> --length <ms>`. beeplumbgh beds (night-drive, essay-lofi, tension-pulse, reflect-keys) carry a fixed `bpm` because the kinetic edit is cut to the beat (brand.md section 6); generate them locally with tools/gen_music_local.py (ACE-Step, MIT, output owned by the channel). The original beds above came with the template and were generated on its author's ElevenLabs account: demo use only, don't publish them.",
   "defaults": {
     "model": "music_v2",
     "force_instrumental": true,
@@ -96,6 +96,66 @@
         "bed"
       ],
       "prompt": "A curious documentary explainer background bed. Playful pizzicato strings and soft marimba plucks over a gentle pad, with very light brushed hand percussion, understated and steady. The mood of a Vox or New York Times explainer: inquisitive, warm, intelligent, never comedic. Designed to sit under a spoken voiceover: consistent energy, no build-ups, no drops, no foreground melody hooks. Around 95 BPM, instrumental."
+    },
+    {
+      "id": "night-drive",
+      "category": "drive",
+      "duration_s": 180,
+      "bpm": 120,
+      "tags": [
+        "synthwave",
+        "driving",
+        "night",
+        "forward-motion",
+        "kinetic",
+        "bed"
+      ],
+      "prompt": "Driving instrumental synthwave for a late-night video essay. Pulsing analog bass on every eighth note, tight electronic drums with a steady four-on-the-floor kick, warm retro synth pads and a restrained arpeggio. Confident and cinematic with forward motion, consistent energy from start to finish, no vocals, no big drops, leaves room for a voice on top."
+    },
+    {
+      "id": "essay-lofi",
+      "category": "lofi",
+      "duration_s": 180,
+      "bpm": 88,
+      "tags": [
+        "lofi",
+        "hip-hop",
+        "dark",
+        "reflective",
+        "commentary",
+        "bed"
+      ],
+      "prompt": "Dark, moody lo-fi hip hop instrumental for a thoughtful commentary video. Dusty boom-bap drums, deep warm bass, muted Rhodes chords with tape saturation and a little vinyl crackle. Reflective and nocturnal but with a steady head-nod groove, consistent throughout, no vocals, sits under a spoken voice."
+    },
+    {
+      "id": "tension-pulse",
+      "category": "tension",
+      "duration_s": 120,
+      "bpm": 110,
+      "tags": [
+        "tension",
+        "pulse",
+        "minimal",
+        "dark",
+        "investigative",
+        "bed"
+      ],
+      "prompt": "Minimal dark electronic tension bed for an investigative video essay. A low ticking pulse, sub bass swells, sparse metallic percussion and a slowly rising filtered synth drone. Suspenseful and focused without becoming horror, steady and unresolved, instrumental, no vocals."
+    },
+    {
+      "id": "reflect-keys",
+      "category": "reflective",
+      "duration_s": 120,
+      "bpm": 72,
+      "tags": [
+        "piano",
+        "ambient",
+        "philosophical",
+        "sparse",
+        "emotional",
+        "bed"
+      ],
+      "prompt": "Sparse, contemplative instrumental for a philosophical moment in a video essay. Soft felt piano with long reverb, a warm low string pad and gentle tape hiss. Quiet, spacious and a little melancholy but hopeful, no drums, no vocals, slow and steady."
     }
   ]
 }

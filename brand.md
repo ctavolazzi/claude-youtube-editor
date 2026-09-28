@@ -199,6 +199,8 @@ someone" signal), and a soft **film-projector click** on source cards.
   clip's `source` + `license` is in the catalog.
 - **Music.** Chosen FIRST, because it sets the cut grid; mixed at the final-mix step
   (`tools/gen_music.py` + `tools/mix_music.py`). Driving, mid-tempo (100 to 130 BPM), no vocals. The
-  existing `media/library/music/` tracks were generated on the template author's ElevenLabs account;
-  generate your own with `tools/gen_music.py` before publishing.
+  original `media/library/music/` tracks were generated on the template author's ElevenLabs account;
+  generate your own before publishing: `tools/gen_music_local.py` (ACE-Step 1.5, MIT, free, the output is
+  yours) from the palette's beeplumbgh beds (`night-drive` 120, `essay-lofi` 88, `tension-pulse` 110,
+  `reflect-keys` 72 BPM), or `tools/gen_music.py` on your own ElevenLabs account.
 - **Library is the durable asset:** `media/library/sfx/` (`catalog.json` + `clips/`). Reuse first.

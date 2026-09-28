@@ -4,6 +4,8 @@
 .youtube/
 
 # python
+# downloaded local-AI binaries (tools/install_local_ai.py)
+tools/bin/
 __pycache__/
 *.pyc
 venv/

@@ -63,13 +63,15 @@ highlight it, cite outlet + date + URL).
    trap and its move. Mark every beat inline: `[THESIS]`, `[CH 2: title]`, `[QUOTE: author]`,
    `[SOURCE: url]`, `[CLIP: url 1:12-1:20]`, `[TERM]`, `[STAT: source]`, `[VS]`.
 2. **Record the voice** (a decent mic, a quiet room) and **record the beds**.
-3. **Cut the voice**: `/clean-cut` on the voice recording, then `/clean-audio`.
+3. **Cut the voice**: `/clean-cut` on the voice recording (free local path: `transcribe_local.py --align`
+   → `auto_cut.py` first pass → your judgment on retakes), then `/clean-audio` (`--method deepfilter` first).
 4. **Gather sources**: `python tools/grab_source.py clip|page|image ... --project videos/<p>` for every
    `[CLIP]` and `[SOURCE]` tag. The ledger fills itself.
 5. **Build the master**: lay the gameplay bed under the cut voice (one take per chapter).
 6. **Build the beats**: `/make-tsx` with the commentary kit; each tag becomes a shot in
    `remotion/src/shots/<p>/`, word-synced to `edited-transcript.json`.
-7. **SFX** (`/suggest-sfx`), **packaging** (`/packaging`, description gets the credits block),
+7. **Music + SFX**: pick the bed FIRST (it sets the cut grid), generated locally with
+   `tools/gen_music_local.py`; then `/suggest-sfx`. **Packaging** (`/packaging`, description gets the credits block),
    **upload** (`tools/yt_upload.py`).
 
 ## Try it with no footage
