@@ -11,6 +11,8 @@ SFX) and `remotion/src/lib/commentary.tsx` (bed + cards). **`KineticReel` in
 `remotion/src/shots/beeplumb/` is the reference for energy and pacing; match it, don't regress to
 calm fades.** The `Essay*` shots are the component catalog.
 
+**Approved default (owner feedback 2026-09-28): the KINETIC style.** Of three cuts of one recording (kinetic, archival, captions), the owner picked kinetic. `remotion/src/shots/demo-comfort-trap/ComfortKinetic.tsx` is the template for a voice-driven video: copy it, regenerate `_data.ts` from the new transcript, re-map the scenes to the new sentences. Archival and captions stay available only on request.
+
 ## 1. Script → beat sheet
 
 From `videos/<p>/script/script.md`, produce `videos/<p>/work/beats.json`: one entry per tagged beat
