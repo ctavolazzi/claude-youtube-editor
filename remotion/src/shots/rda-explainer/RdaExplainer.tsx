@@ -76,7 +76,9 @@ const RdaExplainer: React.FC = () => {
         </Sequence>
       ))}
 
-      <Audio src={MUSIC('docu-pluck')} volume={(f) => iio(f, [0, 20, TOTAL - 60, TOTAL], [0, 0.2, 0.2, 0])} />
+      {/* No voice to sit under, so the bed carries the audio: 0.8 is about -2 dB on a ~-20 LUFS
+          library clip. Master the export to -16 LUFS / -1.5 dBTP (ffmpeg loudnorm, video copied). */}
+      <Audio src={MUSIC('docu-pluck')} volume={(f) => iio(f, [0, 20, TOTAL - 60, TOTAL], [0, 0.8, 0.8, 0])} />
       {CUES.map((cue, i) => (
         <Sequence key={`sfx-${i}`} from={cue.f} durationInFrames={60}>
           <Audio src={SFX(cue.id)} volume={cue.vol} />

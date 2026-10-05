@@ -55,7 +55,9 @@ const FONT_FILES: Array<[string, string, string]> = [
 ];
 
 if (typeof document !== 'undefined' && typeof FontFace !== 'undefined') {
-  const handle = delayRender('rda-explainer fonts');
+  // Generous timeout: with many render tabs starting at once, the default 30s can expire
+  // before every tab has loaded the fonts. Failing loudly beats rendering in fallback fonts.
+  const handle = delayRender('rda-explainer fonts', { timeoutInMilliseconds: 120000 });
   Promise.all(
     FONT_FILES.map(([family, file, weight]) => {
       const face = new FontFace(family, `url('${P(file)}') format('woff2')`, { weight });
